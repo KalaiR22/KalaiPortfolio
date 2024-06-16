@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-black text-white;
+}
+
+.text-linear-gradient {
+    background: linear-gradient(90deg,  #E680E8 0%, #A3C4F1 15%,#A3C4F1 39%, #E480EB 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display:inline-block;
+    background-size: 100% 100%;
+    /* Adjust size to fit text block */
+    background-position: center;
+    line-height: 1.2;
+}
+
+/* Custom radial gradient for text */
+.text-radial-gradient {
+    background: linear-gradient(90deg, #E9EFEF 4%, #E680E8 29%, #A3C4F1 49%, #E480EB 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    background-size: 100% 100%;
+    /* Adjust size to fit text block */
+    background-position: center;
+    line-height: 1.2;
+}
+
+.button-top-bottom{
+    @apply bg-gradient-to-b from-gradientstart to-gradientend text-white p-3 rounded-full
+}
+
+.button-left-right{
+    @apply  text-black px-3 py-2 rounded-full  items-center;
+    background-image: linear-gradient(90deg, #E680E8, #43C4F1);
+}
+.roboto-thin {
+    @apply font-roboto font-thin not-italic;
+}
+
+.roboto-light {
+    @apply font-roboto font-light not-italic;
+}
+
+.roboto-regular {
+    @apply font-roboto font-regular not-italic;
+}
+
+.roboto-medium {
+    @apply font-roboto font-medium not-italic;
+}
+
+.roboto-bold {
+    @apply font-roboto font-bold not-italic;
+}
+
+.roboto-black {
+    @apply font-roboto font-black not-italic;
+}
+
+.roboto-thin-italic {
+    @apply font-roboto font-thin italic;
+}
+
+.roboto-light-italic {
+    @apply font-roboto font-light italic;
+}
+
+.roboto-regular-italic {
+    @apply font-roboto font-regular italic;
+}
+
+.roboto-medium-italic {
+    @apply font-roboto font-medium italic;
+}
+
+.roboto-bold-italic {
+    @apply font-roboto font-bold italic;
+}
+
+.roboto-black-italic {
+    @apply font-roboto font-black italic;
+}
