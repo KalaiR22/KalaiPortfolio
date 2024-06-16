@@ -86,3 +86,22 @@ body {
 .roboto-black-italic {
     @apply font-roboto font-black italic;
 }
+
+.logo{
+    @apply font-mysoul font-regular  text-2;
+    font-size: 40px;
+}
+.title{
+    @apply font-roboto font-bold not-italic;
+    font-size: 64px;
+}
+
+.menu{
+    @apply font-roboto font-medium text-1;
+    font-size: 21px;
+}
+
+.para-1{
+    @apply font-roboto font-medium text-1;
+    font-size: 20px;
+}
