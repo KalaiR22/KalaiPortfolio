@@ -40,19 +40,20 @@ const Banner = () => {
       <div className="pl-12">
         <img src={main} alt="working" />
       </div>
-      <div className="absolute right-[43rem]">
-        <img src={cone} alt="cone" />
+      <div>
+        <div className="absolute right-[43rem]">
+          <img src={cone} alt="cone" />
+        </div>
+        <div className="absolute top-[4rem] right-[4rem]">
+          <img src={chain} alt="chain" />
+        </div>
+        <div className="absolute top-[26rem] right-0 ">
+          <img src={chaintwo} alt="chain" />
+        </div>
+        <div className="absolute top-[38rem] right-[35rem]">
+          <img src={chain} alt="chain" />
+        </div>
       </div>
-      <div className="absolute top-[4rem] right-[4rem]">
-        <img src={chain} alt="chain" />
-      </div>
-      <div className="absolute top-[26rem] right-0 ">
-        <img src={chaintwo} alt="chain" />
-      </div>
-      <div className="absolute top-[38rem] right-[35rem]">
-        <img src={chain} alt="chain" />
-      </div>
-     
     </div>
   );
 }

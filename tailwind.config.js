@@ -31,6 +31,7 @@ export default {
         5:'#A9A9A9',
         6:'#D0D9DD',
         7:"#E9EFEF",
+        8:'#0D1116',
         gradientstart: '#A3C4F1',
         gradientend: '#E680E8',
         active:"#E480EB",

@@ -20,7 +20,7 @@ const Header = () => {
         <div className="logo ">Kalaivani</div>
         <div>
           <button
-            className={`button-left-right rounded-md sm:hidden text-white transition duration-300 ${
+            className={`button-left-right rounded-md sm:hidden text-white transition duration-300 px-3 py-2${
               menuOpen ? "rotate-180" : ""
             }`}
             onClick={handleToggle}
