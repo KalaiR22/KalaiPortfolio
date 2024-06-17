@@ -96,6 +96,9 @@ body {
     font-size: 64px;
 }
 
+.hello{
+    @apply font-roboto font-bold text-[120px];
+}
 .menu{
     @apply font-roboto font-medium hover:text-active text-[16px] md:text-[21px];
     
