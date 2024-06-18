@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
         <div className="flex gap-12">
           {footerlogo.map((footer) => (
-            <div>
+            <div key={footer.id}>
               <img src={footer.image} alt="logo" />
             </div>
           ))}

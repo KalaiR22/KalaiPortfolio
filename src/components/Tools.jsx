@@ -13,7 +13,7 @@ const Tools = () => {
       </div>
       <div className='grid grid-cols-8 gap-12 py-24'>
         {tools.map((tool)=> (
-            <div className='flex flex-col items-center gap-2'>
+            <div className='flex flex-col items-center gap-2' key={tool.id}>
                 <img src={tool.image} alt='tool'/>
                 <div className='para-3'>{tool.title}</div>
             </div>

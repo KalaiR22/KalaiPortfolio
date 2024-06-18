@@ -96,10 +96,19 @@ body {
     @apply font-roboto font-bold not-italic;
     font-size: 64px;
 }
+.titleone{
+    @apply font-roboto font-bold;
+    font-size: 96px;
+}
 
 .titletwo{
     @apply font-roboto font-regular text-3;
     font-size: 64px;
+}
+
+.titlethree{
+    @apply font-roboto font-regular text-6;
+    font-size: 96px;
 }
 .hello{
     @apply font-roboto font-bold text-[120px];

@@ -5,7 +5,7 @@ import chain from '../assets/chain.png';
 
 const Projects = () => {
   return (
-    <div className="relative px-4 sm:px-10 md:px-28 flex flex-col">
+    <div  className="relative px-4 sm:px-10 md:px-28 flex flex-col">
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center pb-4">
           Handpicked Projects
@@ -17,7 +17,7 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-3 gap-12 relative py-32">
         {projects.map((project) => (
-          <div className="relative">
+          <div className="relative" key={project.id}>
             <img src={project.image} alt="project" className="relative z-20" />
           </div>
         ))}
