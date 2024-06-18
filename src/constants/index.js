@@ -14,6 +14,7 @@ import socket from '../assets/socket.png';
 import storybook from '../assets/storybook.png';
 import tailwindcss from '../assets/tailwindcss.png';
 import ts from '../assets/ts.png';
+import frame from '../assets/frame.png'
 
 export const tools =[
     {
@@ -97,4 +98,33 @@ export const tools =[
     title: "Git",
     image: git,
   },
+]
+
+
+export const projects =[
+        {
+    id: "0",
+    image: frame,
+  },
+  {
+    id: "1",
+    image: frame,
+  },
+  {
+    id: "2",
+    image: frame,
+  },
+  {
+    id: "3",
+    image: frame,
+  },
+  {
+    id: "4",
+    image: frame,
+  },
+  {
+    id: "5",
+    image: frame,
+  },
+ 
 ]

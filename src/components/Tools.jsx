@@ -3,11 +3,11 @@ import {tools} from '../constants'
 
 const Tools = () => {
   return (
-    <div className="py-24 px-4 sm:px-10 md:px-28 flex flex-col">
+    <div className="pt-24 pb-16 px-4 sm:px-10 md:px-28 flex flex-col">
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center pb-4">Tools</h1>
       </div>
-      <div className="para-1 w-[645px] text-center mx-auto leading-6">
+      <div className="para-1 pt-2 w-[645px] text-center mx-auto leading-6">
         Mastering the key instruments for professional excellence and utilizing
         advanced software and technologies for superior outcomes.
       </div>

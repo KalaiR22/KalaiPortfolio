@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import Crisscross from '../components/Crisscross';
 import AboutMe from '../components/AboutMe';
 import Tools from '../components/Tools';
+import Projects from '../components/Projects';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Crisscross/>
       <AboutMe/>
       <Tools/>
+      <Projects/>
     </div>
   );
 }

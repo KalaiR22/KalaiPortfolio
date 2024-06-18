@@ -15,8 +15,8 @@ const Header = () => {
   };
 
   return (
-    <div className="relative z-50">
-      <div className="bg-black  fixed top-0 left-0 right-0 flex justify-between items-center px-4 sm:px-10 md:px-24 py-4 h-20">
+    <div className="relative z-50 ">
+      <div className="bg-black  fixed top-0 left-0 right-0 flex justify-between shadow-xl shadow-black/40 rounded-md items-center px-4 sm:px-10 md:px-24 py-4 h-20">
         <div className="logo ">Kalaivani</div>
         <div>
           <button
