@@ -15,6 +15,10 @@ import storybook from '../assets/storybook.png';
 import tailwindcss from '../assets/tailwindcss.png';
 import ts from '../assets/ts.png';
 import frame from '../assets/frame.png'
+import discord from '../assets/discord.png';
+import github from '../assets/github.png';
+import linkedin from '../assets/linkedin.png';
+import telegram from '../assets/telegram.png';
 
 export const tools =[
     {
@@ -127,4 +131,23 @@ export const projects =[
     image: frame,
   },
  
+]
+
+export const footerlogo=[
+           {
+    id: "0",
+    image: github,
+  },
+  {
+    id: "1",
+    image: discord,
+  },
+  {
+    id: "2",
+    image: linkedin,
+  },
+  {
+    id: "3",
+    image: telegram,
+  },
 ]

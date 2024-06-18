@@ -97,6 +97,10 @@ body {
     font-size: 64px;
 }
 
+.titletwo{
+    @apply font-roboto font-regular text-3;
+    font-size: 64px;
+}
 .hello{
     @apply font-roboto font-bold text-[120px];
 }
@@ -121,6 +125,11 @@ body {
 }
 .para-4 {
     @apply font-roboto font-medium text-1;
+    font-size: 24px;
+}
+
+.para-5 {
+    @apply font-roboto font-regular text-3;
     font-size: 24px;
 }
 
