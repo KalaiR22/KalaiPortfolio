@@ -115,6 +115,11 @@ body {
     font-size: 21px;
 }
 
+.para-3{
+    @apply font-inter font-regular text-5 tracking-normal;
+    font-size:18px;
+}
+
 .transition {
     transition-property: transform;
 }

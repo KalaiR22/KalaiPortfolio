@@ -13,6 +13,7 @@ export default {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         mysoul: ['My Soul', 'cursive'],
+        inter:[ 'Inter', 'sans-serif'],
       },
       fontWeight: {
         thin: 100,

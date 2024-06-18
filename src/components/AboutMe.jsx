@@ -8,7 +8,7 @@ import chainthree from '../assets/chainthree.png';
 
 const AboutMe = () => {
   return (
-    <div className="px-4  py-20 sm:px-10 md:px-28 pb-12  relative flex justify-between">
+    <div className="px-4  py-20 sm:px-10 md:px-28   relative flex justify-between">
       <div className="flex justify-center items-center">
         <img src={aboutme} alt="about" />
       </div>
