@@ -122,6 +122,10 @@ body {
     @apply font-roboto font-medium text-6;
     font-size: 40px;
 }
+.title-7{
+    @apply font-roboto font-medium text-1;
+    font-size: 32px;
+}
 .hello{
     @apply font-roboto font-bold text-[120px];
 }
@@ -158,7 +162,10 @@ body {
     @apply font-roboto font-regular text-1;
     font-size: 28px;
 }
-
+.para-7 {
+    @apply font-roboto font-medium text-5;
+    font-size: 24px;
+}
 .bottom-border{
     @apply border-b border-7 
 }

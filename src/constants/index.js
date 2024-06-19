@@ -19,7 +19,7 @@ import discord from '../assets/discord.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import telegram from '../assets/telegram.png';
-
+import achievment from '../assets/achievement.png';
 export const tools =[
     {
     id: "0",
@@ -171,4 +171,55 @@ export const workexperience=[
     location:'Chennai',
     year:'2024',
   }
+]
+
+
+export const achievmentimage =[
+        {
+    id: "0",
+    image: achievment,
+  },
+  {
+    id: "1",
+    image: achievment,
+  },
+  {
+    id: "2",
+    image: achievment,
+  },
+  {
+    id: "3",
+    image: achievment,
+  },
+  {
+    id: "4",
+    image: achievment,
+  },
+  {
+    id: "5",
+    image: achievment,
+  },
+ 
+]
+
+
+export const achievements = [
+  {
+    id:'0',
+    title:"Hackathon Winner",
+    year:"2023",
+    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+  },
+  {
+    id:'1',
+    title:"Hackathon Winner",
+    year:"2023",
+    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+  },
+  {
+    id:'2',
+    title:"Hackathon Winner",
+    year:"2023",
+    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+  },
 ]
