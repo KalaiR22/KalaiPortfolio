@@ -40,131 +40,85 @@ body {
     background-image: linear-gradient(90deg, #E680E8, #43C4F1);
     font-size: 24px
 }
-.roboto-thin {
-    @apply font-roboto font-thin not-italic;
-}
 
-.roboto-light {
-    @apply font-roboto font-light not-italic;
-}
-
-.roboto-regular {
-    @apply font-roboto font-regular not-italic;
-}
-
-.roboto-medium {
-    @apply font-roboto font-medium not-italic;
-}
-
-.roboto-bold {
-    @apply font-roboto font-bold not-italic;
-}
-
-.roboto-black {
-    @apply font-roboto font-black not-italic;
-}
-
-.roboto-thin-italic {
-    @apply font-roboto font-thin italic;
-}
-
-.roboto-light-italic {
-    @apply font-roboto font-light italic;
-}
-
-.roboto-regular-italic {
-    @apply font-roboto font-regular italic;
-}
-
-.roboto-medium-italic {
-    @apply font-roboto font-medium italic;
-}
-
-.roboto-bold-italic {
-    @apply font-roboto font-bold italic;
-}
-
-.roboto-black-italic {
-    @apply font-roboto font-black italic;
-}
 
 .logo{
     @apply font-mysoul font-regular  text-2 text-[30px] md:text-[40px];
    
 }
 .title{
-    @apply font-roboto font-bold not-italic;
-    font-size: 64px;
+    @apply font-roboto font-bold not-italic lg:text-[3.3rem] xl:text-[4rem] 2xl:text-[4rem];
+    
 }
 .titleone{
     @apply font-roboto font-bold;
-    font-size: 96px;
+    font-size: 6rem;
 }
 
 .titletwo{
     @apply font-roboto font-regular text-3;
-    font-size: 64px;
+    font-size: 4rem;
 }
 
 .titlethree{
     @apply font-roboto font-regular text-6;
-    font-size: 96px;
+    font-size: 6rem;
 }
 .titlefour {
     @apply font-roboto font-regular text-2;
-    font-size: 48px;
+    font-size: 3rem;
 }
 .titlefive {
     @apply font-roboto font-regular text-1;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 .titlesix {
     @apply font-roboto font-medium text-6;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 .title-7{
     @apply font-roboto font-medium text-1;
-    font-size: 32px;
+    font-size: 2rem;
 }
 .hello{
-    @apply font-roboto font-bold text-[120px];
+    @apply font-roboto font-bold text-[3rem] sm:text-[4rem] md:text-[5rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
 }
 .menu{
-    @apply font-roboto font-medium hover:text-active text-[16px] md:text-[21px];
+    @apply font-roboto font-medium hover:text-active text-[1rem] md:text-[1.3125rem];
     
 }
 
 .para-1{
     @apply font-roboto font-medium text-1;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .para-2{
     @apply font-roboto font-medium text-2;
-    font-size: 21px;
+    font-size: 1.3125rem;
 }
 
 .para-3{
     @apply font-inter font-regular text-5 tracking-normal;
-    font-size:18px;
+    font-size:1.125rem;
 }
 .para-4 {
     @apply font-roboto font-medium text-1;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .para-5 {
     @apply font-roboto font-regular text-3;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .para-6{
     @apply font-roboto font-regular text-1;
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 .para-7 {
     @apply font-roboto font-medium text-5;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 .bottom-border{
     @apply border-b border-7 

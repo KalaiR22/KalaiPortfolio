@@ -7,8 +7,8 @@ const Tools = () => {
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center pb-4">Tools</h1>
       </div>
-      <div className="para-1 pt-2 w-[645px] text-center mx-auto leading-6">
-        Mastering the key instruments for professional excellence and utilizing
+      <div className="para-1 pt-2  text-center mx-auto leading-6">
+        Mastering the key instruments for professional excellence and utilizing<br/>
         advanced software and technologies for superior outcomes.
       </div>
       <div className='grid grid-cols-8 gap-12 py-24'>
