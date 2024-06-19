@@ -4,7 +4,7 @@ import { achievements } from '../constants';
 
 const Achievements = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pb-24">
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center pb-4">
           Achievements

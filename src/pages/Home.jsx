@@ -4,7 +4,7 @@ import Crisscross from "../components/Crisscross";
 import AboutMe from "../components/AboutMe";
 import Tools from "../components/Tools";
 import Projects from "../components/Projects";
-import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <div id="projects-section">
         <Projects />
       </div>
-      <Footer />
+      
     </div>
   );
 }
