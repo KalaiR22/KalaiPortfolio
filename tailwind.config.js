@@ -24,7 +24,7 @@ export default {
         black: 900,
       },
       colors: {
-        black: '#000000',
+        black: '#0D1116',
         1:'#D6D7DB',
         2:'#FFFFFF',
         3:'#CBCBCB',

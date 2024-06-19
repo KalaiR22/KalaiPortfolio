@@ -110,6 +110,18 @@ body {
     @apply font-roboto font-regular text-6;
     font-size: 96px;
 }
+.titlefour {
+    @apply font-roboto font-regular text-2;
+    font-size: 48px;
+}
+.titlefive {
+    @apply font-roboto font-regular text-1;
+    font-size: 36px;
+}
+.titlesix {
+    @apply font-roboto font-medium text-6;
+    font-size: 40px;
+}
 .hello{
     @apply font-roboto font-bold text-[120px];
 }
@@ -142,6 +154,14 @@ body {
     font-size: 24px;
 }
 
+.para-6{
+    @apply font-roboto font-regular text-1;
+    font-size: 28px;
+}
+
+.bottom-border{
+    @apply border-b border-7 
+}
 .transition {
     transition-property: transform;
 }

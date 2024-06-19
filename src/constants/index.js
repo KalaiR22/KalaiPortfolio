@@ -151,3 +151,24 @@ export const footerlogo=[
     image: telegram,
   },
 ]
+
+export const workexperience=[
+  {
+    id:'0',
+    company:'Delta Info Tech',
+    role:'Mern Stack',
+    part:'Frontend - Backend',
+    industry:'Job offer site',
+    location:'Chennai',
+    year:'2024',
+  },
+  {
+    id:'0',
+    company:'Yugaas Tech',
+    role:'Mern Stack',
+    part:'Frontend - Backend',
+    industry:'Job offer site',
+    location:'Chennai',
+    year:'2024',
+  }
+]
