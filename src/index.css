@@ -56,8 +56,8 @@ body {
 }
 
 .titletwo{
-    @apply font-roboto font-regular text-3;
-    font-size: 4rem;
+    @apply font-roboto font-regular text-3 lg:text-[3rem] xl:text-[4rem];
+    
 }
 
 .titlethree{

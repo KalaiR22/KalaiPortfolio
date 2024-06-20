@@ -3,7 +3,7 @@ import { footerlogo } from '../constants';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-4 sm:px-10 md:px-28">
+    <div className="flex flex-col px-4 sm:px-10 xl:px-14 2xl:px-28">
       <div className="mx-auto">
         <h1 className=" titletwo text-center leading-[5rem] ">
           Have an Awesome Project <br /> Idea?
@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="text-radial-gradient title text-center ">
           Let’s Connect:
         </div>
-        <div className="flex gap-12">
+        <div className="flex lg:gap-6 xl:gap-12">
           {footerlogo.map((footer) => (
             <div key={footer.id}>
               <img src={footer.image} alt="logo" />
@@ -26,7 +26,9 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className='para-5 pb-4 text-center'>Developed by kalaivani @2024.All rights received</div>
+      <div className="para-5 pb-4 text-center">
+        Developed by kalaivani @2024.All rights received
+      </div>
     </div>
   );
 }
