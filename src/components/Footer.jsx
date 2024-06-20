@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <div className="flex flex-col px-4 sm:px-10 xl:px-14 2xl:px-28">
       <div className="mx-auto">
-        <h1 className=" titletwo text-center leading-[5rem] ">
+        <h1 className=" titletwo text-center  md:leading-[3rem] lg:leading-[5rem] ">
           Have an Awesome Project <br /> Idea?
         </h1>
       </div>
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center ">
-          Let’s Discuss
+          Let’s Discuss 
         </h1>
       </div>
-      <div className="flex items-center justify-between px-5 py-40">
+      <div className="flex flex-col lg:flex-row items-center justify-between px-5 py-40">
         <div className="text-radial-gradient title text-center ">
           Let’s Connect:
         </div>

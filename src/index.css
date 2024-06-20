@@ -47,7 +47,7 @@ body {
    
 }
 .title{
-    @apply font-roboto font-bold not-italic  sm:text-[3.1rem] xl:text-[4rem] 2xl:text-[4rem];
+    @apply font-roboto font-bold not-italic md:text-[2.2rem]  lg:text-[3.1rem]  xl:text-[4rem] 2xl:text-[4rem];
     
 }
 .titleone{
@@ -56,7 +56,7 @@ body {
 }
 
 .titletwo{
-    @apply font-roboto font-regular text-3 lg:text-[3rem] xl:text-[4rem];
+    @apply font-roboto font-regular text-3 md:text-[2rem] lg:text-[3rem] xl:text-[4rem];
     
 }
 
@@ -81,7 +81,7 @@ body {
     font-size: 2rem;
 }
 .hello{
-    @apply font-roboto font-bold text-[3rem] sm:text-[5rem]  md:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
+    @apply font-roboto font-bold text-[3rem] sm:text-[5rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
 }
 .menu{
     @apply font-roboto font-medium hover:text-active text-[1rem] md:text-[1.3125rem];
