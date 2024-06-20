@@ -8,9 +8,13 @@ import chainthree from '../assets/chainthree.png';
 
 const AboutMe = () => {
   return (
-    <div className=" py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex justify-between">
+    <div className=" py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between">
       <div className="flex justify-center items-center">
-        <img src={aboutme} alt="about" className="" />
+        <img
+          src={aboutme}
+          alt="about"
+          className="md:h-[24rem] lg:w-full lg:h-fit"
+        />
       </div>
       <div className="flex flex-col gap-6">
         <div className="mx-auto">
@@ -18,7 +22,7 @@ const AboutMe = () => {
             About Me
           </h1>
         </div>
-        <div className="para-2 lg:w-[500px] xl:w-[703px] leading-6">
+        <div className="para-2 sm:px-20 md:px-28 lg:px-0 lg:w-[500px] xl:w-[703px] leading-6">
           We are a dedicated team of MERN stack developers passionate about
           creating dynamic and responsive web applications. With expertise in
           MongoDB, Express.js, React, and Node.js, we deliver seamless,
@@ -26,7 +30,7 @@ const AboutMe = () => {
           innovation and excellence ensures that we stay ahead of the curve in
           web development trends.
         </div>
-        <div className="flex justify-between">
+        <div className="flex  sm:px-20 md:px-28 lg:px-0 justify-between">
           <div className="flex flex-col gap-5">
             <div className="text-center">
               <div className="text-radial-gradient title text-center">2+</div>

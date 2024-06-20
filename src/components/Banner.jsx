@@ -8,16 +8,16 @@ import chaintwo from "../assets/chaintwo.png";
 
 const Banner = () => {
   return (
-    <div className="px-4 sm:px-10 xl:px-14 2xl:px-20 justify-between flex relative">
-      <div className="py-20">
-        <div>
+    <div className="px-4 sm:px-20 lg:px-10 xl:px-14 2xl:px-20 justify-between flex  flex-col-reverse  lg:flex-row relative ">
+      <div className="py-20 mx-auto">
+        <div className="">
           <div className="text-linear-gradient hello">
             Hi!
             <span className="inline-block">
               <img
                 src={hi}
                 alt="hi"
-                className="ml-6 lg:h-[5rem] lg:w-[5rem] xl:h-[6rem] xl:w-[6rem] "
+                className="ml-6 sm:h-[5rem] sm:w-[5rem]  xl:h-[6rem] xl:w-[6rem]  "
               />{" "}
             </span>{" "}
             <br />
@@ -26,10 +26,14 @@ const Banner = () => {
         </div>
         <div>
           <div className="text-radial-gradient pt-8">
-            <span className="lg:text-[1.8rem] xl:text-[3rem] font-roboto font-bold inline-block ">
+            <span className="md:text-[2rem]  lg:text-[1.8rem] xl:text-[3rem] flex font-roboto font-bold items-end gap-2 ">
               Aspiring{" "}
               <span className="inline-block">
-                <img src={line} alt="hi" className="lg:w-[90%] xl:w-full" />{" "}
+                <img
+                  src={line}
+                  alt="hi"
+                  className=" md:w-[90%] xl:w-full pb-2"
+                />{" "}
               </span>{" "}
             </span>
             <br />
@@ -41,20 +45,20 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex lg:items-center">
-        <img src={main} alt="working" />
+      <div className=" md:h-[26rem] md:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto">
+        <img src={main} alt="working" className="" />
       </div>
       <div>
-        <div className="absolute right-2/4 lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]">
+        <div className="absolute right-2/4 md:h-[5rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]">
           <img src={cone} alt="cone" />
         </div>
-        <div className="absolute lg:top-[.9rem] lg:right-[3rem] xl:top-[1rem] xl:right-[1rem]  2xl:top-[4rem] 2xl:right-[4rem] lg:w-[6rem] lg:h-[6rem] 2xl:w-[8rem] 2xl:h-[8rem]">
+        <div className="absolute md:top-[.9rem] md:right-[2.8rem] xl:top-[1rem] xl:right-[1rem]  2xl:top-[4rem] 2xl:right-[4rem] md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] 2xl:w-[8rem] 2xl:h-[8rem]">
           <img src={chain} alt="chain" />
         </div>
-        <div className="absolute top-[26rem] right-0  lg:w-[6rem] lg:h-[6rem] xl:h-[7rem]  xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[10rem]">
+        <div className="absolute top-[26rem] right-0 md:w-[4rem] md:h-[4rem]  lg:w-[6rem] lg:h-[6rem] xl:h-[7rem]  xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[10rem]">
           <img src={chaintwo} alt="chain" />
         </div>
-        <div className="absolute lg:w-[6rem] lg:h-[6rem] lg:top-[34rem] lg:right-[28rem] xl:top-[38rem] xl:right-[35rem]">
+        <div className="absolute md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] md:top-[30rem] lg:top-[34rem] md:right-[28rem] xl:top-[38rem] xl:right-[35rem]">
           <img src={chain} alt="chain" />
         </div>
       </div>
