@@ -8,9 +8,9 @@ import chainthree from '../assets/chainthree.png';
 
 const AboutMe = () => {
   return (
-    <div className="px-4  py-20 sm:px-10 md:px-28   relative flex justify-between">
+    <div className=" py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex justify-between">
       <div className="flex justify-center items-center">
-        <img src={aboutme} alt="about" />
+        <img src={aboutme} alt="about" className="" />
       </div>
       <div className="flex flex-col gap-6">
         <div className="mx-auto">
@@ -18,7 +18,7 @@ const AboutMe = () => {
             About Me
           </h1>
         </div>
-        <div className="para-2 w-[703px] leading-6">
+        <div className="para-2 lg:w-[500px] xl:w-[703px] leading-6">
           We are a dedicated team of MERN stack developers passionate about
           creating dynamic and responsive web applications. With expertise in
           MongoDB, Express.js, React, and Node.js, we deliver seamless,
@@ -60,13 +60,13 @@ const AboutMe = () => {
       </div>
 
       <div>
-        <div className="absolute top-0 left-5">
+        <div className="absolute top-0 left-5 lg:h-[12rem] lg:w-[12rem] xl:h-[15rem] xl:w-[15rem]">
           <img src={circle} alt="circle" />
         </div>
-        <div className="absolute top-7 right-0">
+        <div className="absolute top-7 right-0 lg:h-[8rem] lg:w-[4rem] xl:h-[9rem] xl:w-[5rem]">
           <img src={conetwo} alt="cone" />
         </div>
-        <div className="absolute top-[41rem] left-0">
+        <div className="absolute top-[41rem] left-0 lg:h-[8rem] lg:w-[6rem] xl:h-[10rem] xl:w-[7rem]">
           <img src={chainthree} alt="chain" />
         </div>
       </div>
