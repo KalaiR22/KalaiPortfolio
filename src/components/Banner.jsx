@@ -8,8 +8,8 @@ import chaintwo from "../assets/chaintwo.png";
 
 const Banner = () => {
   return (
-    <div className="px-4 sm:px-20 md:px-10 xl:px-14 2xl:px-20 justify-between flex  flex-col-reverse  md:flex-row relative ">
-      <div className="py-12 lg:py-20 mx-auto">
+    <div className="px-4 sm:px-20 md:px-10 xl:px-14 2xl:px-20 justify-between flex  flex-col  md:flex-row relative ">
+      <div className="py-4 md:py-12 lg:py-20 mx-auto">
         <div className="">
           <div className="text-linear-gradient hello">
             Hi!
@@ -45,8 +45,8 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className=" md:h-[26rem] md:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto">
-        <img src={main} alt="working" className="" />
+      <div className=" sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto">
+        <img src={main} alt="working"  />
       </div>
       <div>
         <div className="absolute right-2/4 md:h-[5rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]">

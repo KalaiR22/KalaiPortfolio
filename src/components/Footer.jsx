@@ -3,7 +3,7 @@ import { footerlogo } from '../constants';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-4 sm:px-10 xl:px-14 2xl:px-28">
+    <div className="flex flex-col px-8 sm:px-10 xl:px-14 2xl:px-28">
       <div className="mx-auto">
         <h1 className=" titletwo text-center  md:leading-[3rem] lg:leading-[5rem] ">
           Have an Awesome Project <br /> Idea?

@@ -47,7 +47,7 @@ body {
    
 }
 .title{
-    @apply font-roboto font-bold not-italic md:text-[2.2rem]  lg:text-[3.1rem]  xl:text-[4rem] 2xl:text-[4rem];
+    @apply font-roboto font-bold not-italic  sm:text-[2.8rem] md:text-[2.2rem]  lg:text-[3.1rem]  xl:text-[4rem] 2xl:text-[4rem];
     
 }
 .titleone{
