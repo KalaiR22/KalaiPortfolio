@@ -8,7 +8,7 @@ import chainthree from '../assets/chainthree.png';
 
 const AboutMe = () => {
   return (
-    <div className=" py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between">
+    <div className="py-14 sm:py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between">
       <div className="flex justify-center items-center">
         <img
           src={aboutme}
@@ -57,8 +57,8 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="mx-auto pt-6">
-          <button className="flex gap-2 button-left-right rounded-full p-5">
-            Check it out <GoArrowUpRight className="text-[31px]" />
+          <button className="flex gap-2 button-left-right rounded-full p-3 sm:p-5">
+            Check it out <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
           </button>
         </div>
       </div>

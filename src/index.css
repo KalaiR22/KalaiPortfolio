@@ -36,9 +36,9 @@ body {
 }
 
 .button-left-right{
-    @apply  text-black  font-roboto font-medium  items-center;
+    @apply  text-black  font-roboto font-medium  items-center text-[1rem] sm:text-[1.5rem];
     background-image: linear-gradient(90deg, #E680E8, #43C4F1);
-    font-size: 24px
+    
 }
 
 
@@ -59,7 +59,7 @@ body {
 }
 
 .titletwo{
-    @apply font-roboto font-regular text-3  sm:text-[2rem] lg:text-[3rem] xl:text-[4rem];
+    @apply font-roboto font-regular text-3 text-[1.3rem] sm:text-[2rem] lg:text-[3rem] xl:text-[4rem];
     
 }
 
@@ -107,11 +107,11 @@ body {
 }
 
 .para-3{
-    @apply font-inter font-regular text-5 tracking-normal;
-    font-size:1.125rem;
+    @apply font-inter font-regular text-5 tracking-normal sm:text-[.9rem] md:text-[1.125rem];
+    
 }
 .para-4 {
-    @apply font-roboto font-medium text-1 sm:text-[1.2rem] md:text-[1.5rem];
+    @apply font-roboto font-medium text-1 text-[.7rem] sm:text-[1.2rem] md:text-[1.5rem];
    
 }
 

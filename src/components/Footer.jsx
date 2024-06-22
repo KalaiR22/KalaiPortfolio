@@ -3,7 +3,7 @@ import { footerlogo } from '../constants';
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-8 sm:px-10 xl:px-14 2xl:px-28">
+    <div className="flex flex-col px-4 sm:px-10 xl:px-14 2xl:px-28">
       <div className="mx-auto">
         <h1 className=" titletwo text-center  md:leading-[3rem] lg:leading-[5rem] ">
           Have an Awesome Project <br /> Idea?
@@ -14,11 +14,11 @@ const Footer = () => {
           Let’s Discuss 
         </h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-between px-5 py-40">
-        <div className="text-radial-gradient title text-center ">
+      <div className="flex flex-col lg:flex-row items-center justify-between sm:px-5 py-40">
+        <div className="text-radial-gradient title pb-2 text-center ">
           Let’s Connect:
         </div>
-        <div className="flex lg:gap-6 xl:gap-12">
+        <div className="flex gap-2 lg:gap-6 xl:gap-12">
           {footerlogo.map((footer) => (
             <div key={footer.id}>
               <img src={footer.image} alt="logo" />
