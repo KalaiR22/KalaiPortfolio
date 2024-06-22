@@ -23,6 +23,10 @@ export default {
         bold: 700,
         black: 900,
       },
+      screens: {
+        'sm': '500px',
+        // Add custom breakpoints if needed
+      },
       colors: {
         black: '#0D1116',
         1:'#D6D7DB',

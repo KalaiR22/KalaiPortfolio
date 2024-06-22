@@ -13,7 +13,7 @@ const AboutMe = () => {
         <img
           src={aboutme}
           alt="about"
-          className="md:h-[24rem] lg:w-full lg:h-fit"
+          className="h-[15rem] sm:h-[24rem] lg:w-full lg:h-fit"
         />
       </div>
       <div className="flex flex-col gap-6">
@@ -22,7 +22,7 @@ const AboutMe = () => {
             About Me
           </h1>
         </div>
-        <div className="para-2 sm:px-20 md:px-28 lg:px-0 lg:w-[500px] xl:w-[703px] leading-6">
+        <div className="para-2  sm:w-full sm:px-5 md:px-16 lg:px-0 lg:w-[500px] xl:w-[703px] sm:leading-6">
           We are a dedicated team of MERN stack developers passionate about
           creating dynamic and responsive web applications. With expertise in
           MongoDB, Express.js, React, and Node.js, we deliver seamless,
@@ -30,28 +30,28 @@ const AboutMe = () => {
           innovation and excellence ensures that we stay ahead of the curve in
           web development trends.
         </div>
-        <div className="flex  sm:px-20 md:px-28 lg:px-0 justify-between">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-col sm:flex-row sm:px-5 md:px-16 lg:px-0 gap-4 sm:justify-between">
+          <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
               <div className="text-radial-gradient title text-center">2+</div>
             </div>
-            <div className="para-2 w-[102px] text-center leading-6">
+            <div className="para-2-sub sm:w-[102px] text-center sm:sm:leading-6">
               Years of experience
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
               <div className="text-radial-gradient title text-center">10+</div>
             </div>
-            <div className="para-2 w-[102px] text-center leading-6">
+            <div className="para-2-sub sm:w-[102px] text-center sm:leading-6">
               Successfull projects
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
               <div className="text-radial-gradient title text-center">4+</div>
             </div>
-            <div className="para-2 w-[102px] text-center leading-6">
+            <div className="para-2-sub sm:w-[102px] text-center leading-6">
               Intern completion
             </div>
           </div>
@@ -64,13 +64,13 @@ const AboutMe = () => {
       </div>
 
       <div>
-        <div className="absolute top-0 left-5 lg:h-[12rem] lg:w-[12rem] xl:h-[15rem] xl:w-[15rem]">
+        <div className="hidden sm:absolute top-0 left-5 lg:h-[12rem] lg:w-[12rem] xl:h-[15rem] xl:w-[15rem]">
           <img src={circle} alt="circle" />
         </div>
-        <div className="absolute top-7 right-0 lg:h-[8rem] lg:w-[4rem] xl:h-[9rem] xl:w-[5rem]">
+        <div className="hidden sm:absolute top-7 right-0 lg:h-[8rem] lg:w-[4rem] xl:h-[9rem] xl:w-[5rem]">
           <img src={conetwo} alt="cone" />
         </div>
-        <div className="absolute top-[41rem] left-0 lg:h-[8rem] lg:w-[6rem] xl:h-[10rem] xl:w-[7rem]">
+        <div className="hidden sm:absolute top-[41rem] left-0 lg:h-[8rem] lg:w-[6rem] xl:h-[10rem] xl:w-[7rem]">
           <img src={chainthree} alt="chain" />
         </div>
       </div>

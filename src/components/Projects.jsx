@@ -5,7 +5,7 @@ import chain from '../assets/chain.png';
 
 const Projects = () => {
   return (
-    <div className="relative sm:px-20 lg:px-10 xl:px-14 2xl:px-20 flex flex-col">
+    <div className="relative sm:px-14 lg:px-10 xl:px-14 2xl:px-20 flex flex-col">
       <div className="mx-auto">
         <h1 className="text-radial-gradient title text-center pb-4">
           Handpicked Projects

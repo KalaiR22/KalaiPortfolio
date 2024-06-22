@@ -3,7 +3,7 @@ import crisscross from '../assets/criss-cross.png';
 
 const Crisscross = () => {
   return (
-    <div className='py-10 '>
+    <div className='hidden py-10 '>
       <img src={crisscross} alt='crisscross' className='w-full'/>
     </div>
   )

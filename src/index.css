@@ -46,8 +46,11 @@ body {
     @apply font-mysoul font-regular  text-2 text-[30px] md:text-[40px];
    
 }
+.title-main{
+    @apply font-roboto font-bold not-italic text-[1.5rem] sm:text-[2.5rem] md:text-[2.2rem] lg:text-[3.1rem] xl:text-[4rem] 2xl:text-[4rem];
+}
 .title{
-    @apply font-roboto font-bold not-italic  sm:text-[2.8rem] md:text-[2.2rem]  lg:text-[3.1rem]  xl:text-[4rem] 2xl:text-[4rem];
+    @apply font-roboto font-bold not-italic text-[2rem] sm:text-[2.8rem] md:text-[2.8rem]  lg:text-[3.1rem]  xl:text-[4rem] 2xl:text-[4rem];
     
 }
 .titleone{
@@ -56,7 +59,7 @@ body {
 }
 
 .titletwo{
-    @apply font-roboto font-regular text-3 md:text-[2rem] lg:text-[3rem] xl:text-[4rem];
+    @apply font-roboto font-regular text-3  sm:text-[2rem] lg:text-[3rem] xl:text-[4rem];
     
 }
 
@@ -81,7 +84,7 @@ body {
     font-size: 2rem;
 }
 .hello{
-    @apply font-roboto font-bold text-[3rem] sm:text-[5rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
+    @apply font-roboto font-bold text-[2.4rem] sm:text-[4rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
 }
 .menu{
     @apply font-roboto font-medium hover:text-active text-[1rem] md:text-[1.3125rem];
@@ -89,13 +92,18 @@ body {
 }
 
 .para-1{
-    @apply font-roboto font-medium text-1 text-[1.25rem];
+    @apply font-roboto font-medium text-1 text-[.7rem] sm:text-[1.25rem];
     
 }
 
 .para-2{
-    @apply font-roboto font-medium text-2 text-justify lg:text-left;
-    font-size: 1.3125rem;
+    @apply font-roboto font-medium text-2 text-center lg:text-left text-[.8rem] sm:text-[1.3125rem];
+    
+}
+
+.para-2-sub{
+    @apply font-roboto font-medium text-2 text-center  text-[.8rem] sm:text-[1.3125rem];
+
 }
 
 .para-3{
@@ -103,13 +111,13 @@ body {
     font-size:1.125rem;
 }
 .para-4 {
-    @apply font-roboto font-medium text-1;
-    font-size: 1.5rem;
+    @apply font-roboto font-medium text-1 sm:text-[1.2rem] md:text-[1.5rem];
+   
 }
 
 .para-5 {
-    @apply font-roboto font-regular text-3;
-    font-size: 1.5rem;
+    @apply font-roboto font-regular text-3 sm:text-[1.2rem] md:text-[1.5rem];
+   
 }
 
 .para-6{
