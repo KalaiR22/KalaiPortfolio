@@ -54,8 +54,8 @@ body {
     
 }
 .titleone{
-    @apply font-roboto font-bold;
-    font-size: 6rem;
+    @apply font-roboto font-bold text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem];
+    
 }
 
 .titletwo{
@@ -64,24 +64,24 @@ body {
 }
 
 .titlethree{
-    @apply font-roboto font-regular text-6;
-    font-size: 6rem;
+    @apply font-roboto font-regular text-6 text-[2.5rem] sm:text-[4rem] md:text-[4.5rem] lg:text-[5rem] xl:text-[6rem];
+    
 }
 .titlefour {
-    @apply font-roboto font-regular text-2;
-    font-size: 3rem;
+    @apply font-roboto font-regular text-2 text-[1.5rem] sm:text-[1.7rem] lg:text-[2.5rem] xl:text-[3rem];
+    
 }
 .titlefive {
-    @apply font-roboto font-regular text-1;
-    font-size: 2.25rem;
+    @apply font-roboto font-regular text-1  text-[1.3rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.25rem];
+    
 }
 .titlesix {
-    @apply font-roboto font-medium text-6;
-    font-size: 2.5rem;
+    @apply font-roboto font-medium text-6 text-[1.3rem] sm:text-[1.5rem] lg:text-[2rem] xl:text-[2.5rem];
+    
 }
 .title-7{
-    @apply font-roboto font-medium text-1;
-    font-size: 2rem;
+    @apply font-roboto font-medium text-1 text-[1rem] sm:text-[1.5rem] md:text-[2rem];
+    
 }
 .hello{
     @apply font-roboto font-bold text-[2.4rem] sm:text-[4rem] md:text-[4rem] lg:text-[5.5rem] xl:text-[7rem] 2xl:text-[7.5rem];
@@ -99,6 +99,10 @@ body {
 .para-2{
     @apply font-roboto font-medium text-2 text-center lg:text-left text-[.8rem] sm:text-[1.3125rem];
     
+}
+.para-2-about {
+    @apply font-roboto font-medium text-2 text-center  text-[.8rem] sm:text-[1.3125rem];
+
 }
 
 .para-2-sub{
@@ -121,12 +125,12 @@ body {
 }
 
 .para-6{
-    @apply font-roboto font-regular text-1;
-    font-size: 1.75rem;
+    @apply font-roboto font-regular text-1 text-[.9rem] sm:text-[1rem] lg:text-[1.5rem] xl:text-[1.75rem];
+    
 }
 .para-7 {
-    @apply font-roboto font-medium text-5;
-    font-size: 1.5rem;
+    @apply font-roboto font-medium text-5 text-[.9rem] sm:text-[1rem] lg:text-[1.5rem];
+
 }
 .bottom-border{
     @apply border-b border-7 
@@ -141,4 +145,31 @@ body {
 
 .rotate-180 {
     transform: rotate(180deg);
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 15rem;
+    width: 17rem;
+    object-fit: cover;
+}
+.swiper-pagination-bullet {
+    background-color: #d1d5db;
+    /* Default color */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #E680E8;
+    /* Active color */
 }
