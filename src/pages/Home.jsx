@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className="pt-24">
+    <div className="pt-16 sm:pt-24">
       <Banner />
       <Crisscross />
       <AboutMe />

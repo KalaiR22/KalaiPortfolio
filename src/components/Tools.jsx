@@ -15,7 +15,7 @@ const Tools = () => {
       <div className="grid  grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-5 xl:gap-12 py-14 sm:py-24">
         {tools.map((tool) => (
           <div className="flex flex-col items-center gap-1 sm:gap-2" key={tool.id}>
-            <img src={tool.image} alt="tool" />
+            <img src={tool.image} alt="tool"  className='h-[4rem] w-[4rem] sm:h-fit sm:w-fit'/>
             <div className="para-3">{tool.title}</div>
           </div>
         ))}

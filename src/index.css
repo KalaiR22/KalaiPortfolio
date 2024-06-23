@@ -111,7 +111,7 @@ body {
 }
 
 .para-3{
-    @apply font-inter font-regular text-5 tracking-normal sm:text-[.9rem] md:text-[1.125rem];
+    @apply font-inter font-regular text-5 tracking-normal text-[.8rem] sm:text-[.9rem] md:text-[1.125rem];
     
 }
 .para-4 {
