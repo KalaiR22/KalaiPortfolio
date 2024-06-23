@@ -29,7 +29,7 @@ const Header = () => {
           </button>
         </div>
         {menuOpen && (
-          <div className="absolute left-0 w-full top-16 bg-black shadow-lg rounded-lg py-2 sm:hidden flex flex-col px-4">
+          <div className="absolute left-0 w-full top-14 bg-black shadow-lg rounded-lg py-2 sm:hidden flex flex-col px-4">
             <Link
               to="/"
               className={`menu hover:bg-slate-600 py-2 px-2 rounded-md ${
@@ -54,9 +54,11 @@ const Header = () => {
             >
               About
             </Link>
-            <Link
-              to="/"
-              className={`menu hover:bg-slate-600 py-2 px-2 rounded-md ${
+            <ScrollLink
+              to="projects-section"
+              smooth={true}
+              duration={500}
+              className={`menu hover:bg-slate-600 py-2 px-2 rounded-md cursor-pointer ${
                 activeLink === "projects" ? "text-active" : "text-1"
               }`}
               onClick={() => {
@@ -64,10 +66,8 @@ const Header = () => {
                 setMenuOpen(false); // Close menu on link click
               }}
             >
-              <ScrollLink to="projects-section" smooth={true} duration={500}>
-                Projects
-              </ScrollLink>
-            </Link>
+              Projects
+            </ScrollLink>
           </div>
         )}
         <div className="hidden sm:flex gap-8 md:gap-20">
@@ -89,17 +89,17 @@ const Header = () => {
           >
             About
           </Link>
-          <Link
-            to="/"
-            className={`menu ${
+          <ScrollLink
+            to="projects-section"
+            smooth={true}
+            duration={500}
+            className={`menu cursor-pointer ${
               activeLink === "projects" ? "text-active" : "text-1"
             }`}
             onClick={() => setActiveLink("projects")}
           >
-            <ScrollLink to="projects-section" smooth={true} duration={500}>
-              Projects
-            </ScrollLink>
-          </Link>
+            Projects
+          </ScrollLink>
         </div>
       </div>
     </div>

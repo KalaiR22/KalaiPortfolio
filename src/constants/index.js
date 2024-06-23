@@ -163,7 +163,7 @@ export const workexperience=[
     year:'2024',
   },
   {
-    id:'0',
+    id:'1',
     company:'Yugaas Tech',
     role:'Mern Stack',
     part:'Frontend - Backend',

@@ -7,10 +7,10 @@ import conethree from '../assets/conethree.png'
 
 const AboutHero = () => {
   return (
-    <div className="relative flex flex-col items-center leading-[7rem] py-10 md:py-14 lg:py-24 px-4  sm:px-10 md:px-10 xl:px-14 2xl:px-20">
+    <div className="relative flex flex-col items-center leading-[3rem] sm:leading-[5rem] md:leading-[7rem] sm:py-10 md:py-14 lg:py-24 px-4  sm:px-10 md:px-10 xl:px-14 2xl:px-20">
       <div className="titlethree">Hi, I’m</div>
       <div className="titleone text-radial-gradient ">Kalaivani</div>
-      <div className="para-2-about lg:w-[897px] text-center leading-6 pt-[2.5rem]">
+      <div className="para-2-about lg:w-[897px] text-center leading-5 sm:leading-6 pt-[1.5rem] sm:pt-[2rem] md:pt-[2.5rem]">
         We are a dedicated team of MERN stack developers passionate about
         creating dynamic and responsive web applications. With expertise in
         MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack
@@ -18,8 +18,8 @@ const AboutHero = () => {
         excellence ensures that we stay ahead of the curve in web development
         trends.
       </div>
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 md:gap-32 lg:gap-44 leading-[5rem] pt-[4rem]">
-        <div className="flex flex-col ">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 md:gap-32 lg:gap-44 sm:leading-[5rem] pt-[2rem] sm:pt-[4rem]">
+        <div className="flex flex-col leading-0">
           <div className="text-center">
             <div className="text-radial-gradient title text-center">2+</div>
           </div>

@@ -18,7 +18,7 @@ const Achievements = () => {
           Achievements
         </h1>
       </div>
-      <div className="para-1 pt-2 px-[1rem] sm:px-[3rem] md:px-[7rem] lg:px-[10rem] xl:px-[13rem] text-center mx-auto leading-6">
+      <div className="para-1 pt-2 px-[1rem] sm:px-[3rem] md:px-[7rem] lg:px-[10rem] xl:px-[13rem] text-center mx-auto leading-4 sm:leading-6">
         Celebrating key successes and professional highlights and showcasing
         impactful results and accolades.
       </div>
@@ -66,7 +66,7 @@ const Achievements = () => {
               {achievement.title}
             </div>
             <div className="title-7">Year: {achievement.year}</div>
-            <div className="para-7 py-10 leading-7">
+            <div className="para-7 py-6 sm:py-10  leading-6 sm:leading-7">
               {achievement.description}
             </div>
           </div>
