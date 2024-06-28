@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import { ScrollParallax } from "react-just-parallax";
 import aboutme from '../assets/about.png';
 import { GoArrowUpRight } from "react-icons/go";
 import circle from '../assets/circles.png';
@@ -7,8 +8,12 @@ import chainthree from '../assets/chainthree.png';
 
 
 const AboutMe = () => {
+  const parallaxRef = useRef(null);
   return (
-    <div className="py-14 sm:py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between">
+    <div
+      className="py-14 sm:py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between"
+      ref={parallaxRef}
+    >
       <div className="flex justify-center items-center">
         <img
           src={aboutme}
@@ -65,15 +70,17 @@ const AboutMe = () => {
       </div>
 
       <div>
-        <div className="absolute top-0 left-5 h-[6rem] w-[6rem] sm:h-[10rem] sm:w-[10rem] md:h-[12rem] md:w-[12rem] xl:h-[15rem] xl:w-[15rem]">
-          <img src={circle} alt="circle" />
-        </div>
-        <div className="absolute h-[7rem] w-[3.5rem] top-[17rem] sm:top-[25rem] lg:top-7  right-0 sm:h-[9rem] sm:w-[5rem] lg:h-[8rem] lg:w-[4rem]  xl:h-[9rem] xl:w-[5rem]">
-          <img src={conetwo} alt="cone" />
-        </div>
-        <div className="absolute md:top-[60rem] lg:top-[43rem] xl:top-[41rem] left-0 h-[5rem] w-[3rem] sm:h-[6rem] sm:w-[4rem] lg:h-[8rem] lg:w-[6rem] xl:h-[10rem] xl:w-[7rem]">
-          <img src={chainthree} alt="chain" />
-        </div>
+        <ScrollParallax isAbsolutelyPositioned>
+          <div className="absolute top-[2rem] left-5 h-[6rem] w-[6rem] sm:h-[10rem] sm:w-[10rem] md:h-[12rem] md:w-[12rem] xl:h-[15rem] xl:w-[15rem]">
+            <img src={circle} alt="circle" />
+          </div>
+          <div className="absolute h-[7rem] w-[3.5rem] top-[17rem] sm:top-[25rem] lg:top-7  right-0 sm:h-[9rem] sm:w-[5rem] lg:h-[8rem] lg:w-[4rem]  xl:h-[9rem] xl:w-[5rem]">
+            <img src={conetwo} alt="cone" />
+          </div>
+          <div className="absolute bottom-0 md:top-[60rem] lg:top-[43rem] xl:top-[41rem] left-0 h-[5rem] w-[3rem] sm:h-[6rem] sm:w-[4rem] lg:h-[8rem] lg:w-[6rem] xl:h-[10rem] xl:w-[7rem]">
+            <img src={chainthree} alt="chain" />
+          </div>
+        </ScrollParallax>
       </div>
     </div>
   );

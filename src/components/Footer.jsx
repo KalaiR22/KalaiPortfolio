@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { footerlogo } from '../constants';
 
 const Footer = () => {
@@ -19,6 +20,7 @@ const Footer = () => {
           Let’s Connect:
         </div>
         <div className="flex gap-2 lg:gap-6 xl:gap-12">
+          
           {footerlogo.map((footer) => (
             <div key={footer.id}>
               <img src={footer.image} alt="logo" />

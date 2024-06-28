@@ -173,3 +173,18 @@ body {
     background-color: #E680E8;
     /* Active color */
 }
+
+/* In your CSS file */
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.spin-animation {
+    animation: spin 5s linear ;
+}

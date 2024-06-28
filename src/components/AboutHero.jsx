@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useRef} from 'react';
+import { ScrollParallax } from "react-just-parallax";
 import { GoArrowUpRight } from "react-icons/go";
 import chainfour from '../assets/chainfour.png';
 import chainfive from '../assets/chainfive.png';
@@ -6,6 +7,7 @@ import startwo from '../assets/startwo.png'
 import conethree from '../assets/conethree.png'
 
 const AboutHero = () => {
+  const parallaxRef = useRef(null);
   return (
     <div className="relative flex flex-col items-center leading-[3rem] sm:leading-[5rem] md:leading-[7rem] sm:py-10 md:py-14 lg:py-24 px-4  sm:px-10 md:px-10 xl:px-14 2xl:px-20">
       <div className="titlethree">Hi, I’m</div>
@@ -50,18 +52,20 @@ const AboutHero = () => {
         </button>
       </div>
       <div>
-        <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
-          <img src={startwo} alt="star" />
-        </div>
-        <div className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] md:h-[6rem] md:w-[6rem] lg:h-[7rem] lg:w-[7rem]  xl:w-fit xl:h-fit absolute top-[2rem] sm:top-[6rem] md:top-[8rem] lg:top-[10rem] xl:top-[15rem] left-0 ">
-          <img src={chainfour} alt="chain" />
-        </div>
-        <div className=" absolute h-[3.5rem] w-[3.5rem] sm:h-[6rem] sm:w-[6rem] md:h-[9rem] md:w-[9rem]  xl:w-fit xl:h-fit top-0 right-[1rem] sm:top-[2.5rem] sm:right-[2.5rem] md:top-[5rem] md:right-[4rem] lg:top-[6rem] lg:right-[8rem] xl:top-[7rem] xl:right-[10rem]">
-          <img src={chainfive} alt="chain" />
-        </div>
-        <div className=" absolute lg:bottom-[2.5rem] xl:bottom-[3rem] h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[4rem] md:h-[4rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:w-fit xl:h-fit right-1/4">
-          <img src={conethree} alt="cone" />
-        </div>
+        <ScrollParallax isAbsolutelyPositioned>
+          <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
+            <img src={startwo} alt="star" />
+          </div>
+          <div className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] md:h-[6rem] md:w-[6rem] lg:h-[7rem] lg:w-[7rem]  xl:w-fit xl:h-fit absolute top-[2rem] sm:top-[6rem] md:top-[8rem] lg:top-[10rem] xl:top-[15rem] left-0 ">
+            <img src={chainfour} alt="chain" />
+          </div>
+          <div className=" absolute h-[3.5rem] w-[3.5rem] sm:h-[6rem] sm:w-[6rem] md:h-[9rem] md:w-[9rem]  xl:w-fit xl:h-fit top-0 right-[1rem] sm:top-[2.5rem] sm:right-[2.5rem] md:top-[5rem] md:right-[4rem] lg:top-[6rem] lg:right-[8rem] xl:top-[7rem] xl:right-[10rem]">
+            <img src={chainfive} alt="chain" />
+          </div>
+          <div className=" absolute bottom-0 lg:bottom-[2.5rem] xl:bottom-[3rem] h-[2rem] w-[2rem] sm:h-[5rem] sm:w-[4rem] md:h-[4rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:w-fit xl:h-fit right-1/4">
+            <img src={conethree} alt="cone" />
+          </div>
+        </ScrollParallax>
       </div>
     </div>
   );
