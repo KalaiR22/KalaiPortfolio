@@ -1,60 +1,64 @@
-import React from 'react'
-import crisscross from '../assets/criss-cross.png';
+import React from "react";
+import ministar from "../assets/ministar.png";
+
+const textItems = ["Develop", "Discover", "Deploy", "MERN", "Blockchain"];
 
 const Crisscross = () => {
-   
   return (
-    <div className="relative flex items-center w-full justify-center h-screen bg-black">
-      <div className="absolute w-full h-12 rotate-12 bg-transparent">
-        <div className="flex justify-around items-center w-full h-full bg-white text-black">
-          <span className="flex items-center space-x-2">
-            <span>Develop</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Discover</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Deploy</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>MERN</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Blockchain</span>
-            <span className="text-purple-500">✦</span>
-          </span>
+    <div className="relative flex flex-col  items-center w-full justify-center  sm:my-20 h-96 overflow-hidden">
+      <div className="scrolling-wrapper py-2 bg-white  rotate-[10deg]">
+        <div className="scrolling-content">
+          {textItems.map((text, index) => (
+            <div key={index} className="ribbon-text-wrapper">
+              <img
+                src={ministar}
+                alt="star"
+                className="h-[.7rem] w-[.7rem] sm:h-[1rem] sm:w-[1rem] md:h-[2rem] md:w-[2rem] lg:h-[2.5rem] lg:w-[2.5rem]"
+              />
+              <div className="ribbon-text">{text}</div>
+            </div>
+          ))}
+          {textItems.map((text, index) => (
+            <div key={index + textItems.length} className="ribbon-text-wrapper">
+              <img
+                src={ministar}
+                alt="star"
+                className="h-[.7rem] w-[.7rem] sm:h-[1rem] sm:w-[1rem] md:h-[2rem] md:w-[2rem] lg:h-[2.5rem] lg:w-[2.5rem]"
+              />
+              <div className="ribbon-text">{text}</div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="absolute w-full h-12 -rotate-12 bg-transparent">
-        <div className="flex justify-around items-center w-full h-full bg-white text-black">
-          <span className="flex items-center space-x-2">
-            <span>Develop</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Discover</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Deploy</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>MERN</span>
-            <span className="text-purple-500">✦</span>
-          </span>
-          <span className="flex items-center space-x-2">
-            <span>Blockchain</span>
-            <span className="text-purple-500">✦</span>
-          </span>
+      <div className="absolute scrolling-wrapper py-2  bg-white -rotate-[10deg]  ">
+        <div className="scrolling-content  ">
+          {textItems.map((text, index) => (
+            <div key={index} className="ribbon-text-wrapper ">
+              <img
+                src={ministar}
+                alt="star"
+                className="h-[.7rem] w-[.7rem] sm:h-[1rem] sm:w-[1rem] md:h-[2rem] md:w-[2rem] lg:h-[2.5rem] lg:w-[2.5rem]"
+              />
+              <div className="ribbon-text">{text}</div>
+            </div>
+          ))}
+          {textItems.map((text, index) => (
+            <div
+              key={index + textItems.length}
+              className="ribbon-text-wrapper  "
+            >
+              <img
+                src={ministar}
+                alt="star"
+                className="h-[.7rem] w-[.7rem] sm:h-[1rem] sm:w-[1rem] md:h-[2rem] md:w-[2rem] lg:h-[2.5rem] lg:w-[2.5rem]"
+              />
+              <div className="ribbon-text">{text}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Crisscross
+export default Crisscross;

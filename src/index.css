@@ -147,7 +147,9 @@ body {
     transform: rotate(180deg);
 }
 
-
+.ribbon-text{
+    @apply font-roboto font-bold text-[#000000] text-[.5rem] sm:text-[.8rem] md:text-[1.3rem] lg:text-[1.5rem] xl:text-[2rem] ;
+}
 
 .swiper-slide {
     text-align: center;
@@ -187,4 +189,36 @@ body {
 
 .spin-animation {
     animation: spin 5s linear ;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.scrolling-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrolling-content {
+    display: flex;
+    width: 200%;
+    animation: scroll 10s linear infinite;
+}
+
+.ribbon-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.ribbon-text {
+    margin: 0 1rem;
 }
