@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
+import MovingComponent from "react-moving-text";
+
+const AnimationsForChaining = ["blur", "bounce", "effect3D", "swing"];
+
 import ministar from "../assets/ministar.png";
 
 const textItems = ["Develop", "Discover", "Deploy", "MERN", "Blockchain"];
 
 const Crisscross = () => {
+  const [animationIndex, setAnimationIndex] = useState(0);
+  const [animationType, setAnimationType] = useState(AnimationsForChaining[0]);
+
+  const handleChainAnimation = () => {
+    setAnimationIndex(animationIndex + 1);
+    setAnimationType(selectedItems[animationIndex + 1]);
+  };
   return (
+    
     <div className="relative flex flex-col  items-center w-full justify-center  sm:my-20 h-96 overflow-hidden">
-      <div className="scrolling-wrapper py-2 bg-white  rotate-[10deg]">
+      <div className="scrolling-wrapper py-2  bg-white border-y border-[#000000] rotate-[10deg]">
         <div className="scrolling-content">
           {textItems.map((text, index) => (
             <div key={index} className="ribbon-text-wrapper">
@@ -30,7 +42,7 @@ const Crisscross = () => {
           ))}
         </div>
       </div>
-      <div className="absolute scrolling-wrapper py-2  bg-white -rotate-[10deg]  ">
+      <div className="absolute scrolling-wrapper py-2 border-y border-[#000000] bg-white -rotate-[10deg]  ">
         <div className="scrolling-content  ">
           {textItems.map((text, index) => (
             <div key={index} className="ribbon-text-wrapper ">
