@@ -1,4 +1,5 @@
 import React,{useRef} from 'react'
+import { motion } from "framer-motion";
 import { ScrollParallax } from "react-just-parallax";
 import aboutme from '../assets/about.png';
 import { GoArrowUpRight } from "react-icons/go";
@@ -7,6 +8,25 @@ import conetwo from '../assets/conetwo.png';
 import chainthree from '../assets/chainthree.png';
 
 
+const textVariants = {
+  initialone: {
+    x: -100,
+    opacity: 0,
+  },
+  initialtwo: {
+    x: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const AboutMe = () => {
   const parallaxRef = useRef(null);
   return (
@@ -14,28 +34,53 @@ const AboutMe = () => {
       className="py-14 sm:py-20 px-4 sm:px-10 xl:px-14 2xl:px-20   relative flex  flex-col lg:flex-row gap-10 lg:justify-between"
       ref={parallaxRef}
     >
-      <div className="flex justify-center items-center">
+      <motion.div
+        className="flex justify-center items-center"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
         <img
           src={aboutme}
           alt="about"
           className="h-[15rem] sm:h-[24rem] lg:w-full lg:h-fit"
         />
-      </div>
-      <div className="flex flex-col gap-6">
-        <div className="mx-auto">
+      </motion.div>
+      <motion.div
+        className="flex flex-col gap-6"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
+        <motion.div
+          className="mx-auto"
+          variants={textVariants}
+          initial="initialone"
+          whileInView="animate"
+        >
           <h1 className="text-radial-gradient title text-center sm:pb-4">
             About Me
           </h1>
-        </div>
-        <div className="para-2  sm:w-full sm:px-5 md:px-16 lg:px-0 lg:w-[500px] xl:w-[703px] sm:leading-6">
+        </motion.div>
+        <motion.div
+          className="para-2  sm:w-full sm:px-5 md:px-16 lg:px-0 lg:w-[500px] xl:w-[703px] sm:leading-6"
+          variants={textVariants}
+          initial="initialone"
+          whileInView="animate"
+        >
           We are a dedicated team of MERN stack developers passionate about
           creating dynamic and responsive web applications. With expertise in
           MongoDB, Express.js, React, and Node.js, we deliver seamless,
           full-stack solutions tailored to your needs. Our commitment to
           innovation and excellence ensures that we stay ahead of the curve in
           web development trends.
-        </div>
-        <div className="flex flex-col sm:flex-row sm:px-5 md:px-16 lg:px-0 gap-4 sm:justify-between">
+        </motion.div>
+        <motion.div
+          className="flex flex-col sm:flex-row sm:px-5 md:px-16 lg:px-0 gap-4 sm:justify-between"
+          variants={textVariants}
+          initial="initialone"
+          whileInView="animate"
+        >
           <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
               <div className="text-radial-gradient title text-center">2+</div>
@@ -60,14 +105,14 @@ const AboutMe = () => {
               Intern completion
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="mx-auto pt-6">
           <button className="flex gap-2 button-left-right rounded-full p-3 sm:p-5">
             Check it out{" "}
             <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
           </button>
         </div>
-      </div>
+      </motion.div>
 
       <div>
         <ScrollParallax isAbsolutelyPositioned>

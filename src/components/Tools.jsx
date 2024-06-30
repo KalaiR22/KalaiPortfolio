@@ -1,25 +1,64 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import {tools} from '../constants'
+
+const textVariants = {
+  initialone: {
+    x: -100,
+    opacity: 0,
+  },
+  initialtwo: {
+    x: -50,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Tools = () => {
   return (
     <div className=" sm:pt-24 pb-16 px-4 sm:px-14 lg:px-10 xl:px-14 2xl:px-20 flex flex-col">
-      <div className="mx-auto">
+      <motion.div
+        className="mx-auto"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
         <h1 className="text-radial-gradient title text-center pb-4">Tools</h1>
-      </div>
-      <div className="para-1 sm:pt-2 lg:w-[70%] xl:w-[50%] text-center mx-auto sm:leading-6">
+      </motion.div>
+      <motion.div
+        className="para-1 sm:pt-2 lg:w-[70%] xl:w-[50%] text-center mx-auto sm:leading-6"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
         Mastering the key instruments for professional excellence and utilizing
-        
         advanced software and technologies for superior outcomes.
-      </div>
-      <div className="grid  grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-5 xl:gap-12 py-14 sm:py-24">
+      </motion.div>
+      <motion.div className="grid  grid-cols-3 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-8 gap-5 xl:gap-12 py-14 sm:py-24">
         {tools.map((tool) => (
-          <div className="flex flex-col items-center gap-1 sm:gap-2" key={tool.id}>
-            <img src={tool.image} alt="tool"  className='h-[4rem] w-[4rem] sm:h-fit sm:w-fit'/>
+          <motion.div
+            className="flex flex-col items-center gap-1 sm:gap-2"
+            key={tool.id}
+            variants={textVariants}
+            initial="initialtwo"
+            whileInView="animate"
+          >
+            <img
+              src={tool.image}
+              alt="tool"
+              className="h-[3rem] w-[3rem] sm:h-fit sm:w-fit"
+            />
             <div className="para-3">{tool.title}</div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
