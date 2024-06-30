@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 
+
+
 const Header = () => {
   // State to manage the active link
   const [activeLink, setActiveLink] = useState("home");
@@ -16,11 +18,11 @@ const Header = () => {
 
   return (
     <div className="relative z-50">
-      <div className="bg-black fixed top-0 left-0 right-0 flex justify-between shadow-xl shadow-black/40 rounded-md items-center px-4 sm:px-10 xl:px-14 2xl:px-28 py-4 h-14 sm:h-20">
+      <div className="bg-black fixed top-0 left-0 right-0 flex justify-between shadow-xl shadow-black/40 rounded-md items-center px-4 sm:px-10 xl:px-14 2xl:px-28 py-8 h-14 sm:h-20">
         <div className="logo">Kalaivani</div>
         <div>
           <button
-            className={`button-left-right rounded-md sm:hidden text-white transition duration-300 px-2 py-1 ${
+            className={`button-left-right rounded-full sm:hidden text-white transition duration-300 px-2 py-2 ${
               menuOpen ? "rotate-180" : ""
             }`}
             onClick={handleToggle}

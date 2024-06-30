@@ -8,8 +8,24 @@ import main from "../assets/main.png";
 import cone from "../assets/cone.png";
 import chain from "../assets/chain.png";
 import chaintwo from "../assets/chaintwo.png";
+import { motion } from "framer-motion";
 
 const AnimationsForChaining = ["swing"];
+
+const textVariants = {
+  initial: {
+    x: -100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Banner = () => {
   const [animationIndex, setAnimationIndex] = useState(0);
@@ -24,7 +40,13 @@ const Banner = () => {
   const parallaxRef = useRef(null);
   return (
     <div className="px-4 sm:px-10 md:px-10 xl:px-14 2xl:px-20 md:justify-between mx-auto flex flex-col-reverse items-center justify-center md:flex-row relative">
-      <div className="py-4 md:py-12 lg:py-20">
+      <motion.div
+        className="py-4 md:py-12 lg:py-20 " 
+        variants={textVariants}
+        initial="initial"
+        whileInView="animate"
+
+      >
         <div>
           <div className="text-linear-gradient hello">
             Hi!
@@ -35,7 +57,7 @@ const Banner = () => {
                 duration="1000ms"
                 timing="linear"
                 fillMode="forwards"
-                iteration={20}
+                iteration={100}
               >
                 <img
                   src={hi}
@@ -56,8 +78,8 @@ const Banner = () => {
               <span className="inline-block align-bottom">
                 <img
                   src={line}
-                  alt="hi"
-                  className="hidden sm:inline-block md:w-[90%] xl:w-full pb-2"
+                  alt="line"
+                  className="hidden align-bottom sm:inline-block md:w-[90%] xl:w-full pb-2"
                 />
               </span>
             </span>
@@ -75,11 +97,14 @@ const Banner = () => {
             innovation
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto">
+      <motion.div className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto"
+      variants={textVariants}
+        initial="initial"
+        whileInView="animate">
         <img src={main} alt="working" />
-      </div>
+      </motion.div>
       <div>
         <ScrollParallax isAbsolutelyPositioned>
           <div className="absolute right-3/4 top-0 h-[2.5rem] w-[2.5rem] sm:h-[4rem] sm:w-[4rem] md:right-1/3 md:h-[1rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]">
