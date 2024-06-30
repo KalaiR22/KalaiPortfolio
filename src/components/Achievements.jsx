@@ -1,27 +1,54 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Autoplay, Pagination } from "swiper/modules";
 import { achievmentimage } from "../constants";
 import { achievements } from "../constants";
 
+const textVariants = {
+  initialone: {
+    x: -100,
+    opacity: 0,
+  },
+  initialtwo: {
+    x: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+
 const Achievements = () => {
   return (
     <div className="px-4  sm:px-10 md:px-10 xl:px-14 2xl:px-20 flex flex-col pb-24">
-      <div className="mx-auto">
+      <motion.div
+        className="mx-auto"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
         <h1 className="text-radial-gradient title text-center pb-4">
           Achievements
         </h1>
-      </div>
-      <div className="para-1 pt-2 px-[1rem] sm:px-[3rem] md:px-[7rem] lg:px-[10rem] xl:px-[13rem] text-center mx-auto leading-4 sm:leading-6">
+      </motion.div>
+      <motion.div
+        className="para-1 pt-2 px-[1rem] sm:px-[3rem] md:px-[7rem] lg:px-[10rem] xl:px-[13rem] text-center mx-auto leading-4 sm:leading-6"
+        variants={textVariants}
+        initial="initialone"
+        whileInView="animate"
+      >
         Celebrating key successes and professional highlights and showcasing
         impactful results and accolades.
-      </div>
+      </motion.div>
       <div>
         <Swiper
           spaceBetween={30}
@@ -35,15 +62,12 @@ const Achievements = () => {
             bulletActiveClass: "swiper-pagination-bullet-active",
           }}
           breakpoints={{
-            // when window width is >= 320px
             320: {
               slidesPerView: 1,
             },
-            // when window width is >= 640px
             640: {
               slidesPerView: 2,
             },
-            // when window width is >= 1024px
             1024: {
               slidesPerView: 3,
             },
@@ -61,15 +85,37 @@ const Achievements = () => {
 
       <div className=" sm:px-4 md:px-28 flex flex-col gap-6 py-10">
         {achievements.map((achievement) => (
-          <div key={achievement.id}>
-            <div className="text-radial-gradient title ">
+          <motion.div
+            key={achievement.id}
+            variants={textVariants}
+            initial="initialone"
+            whileInView="animate"
+          >
+            <motion.div
+              className="text-radial-gradient title "
+              variants={textVariants}
+              initial="initialone"
+              whileInView="animate"
+            >
               {achievement.title}
-            </div>
-            <div className="title-7">Year: {achievement.year}</div>
-            <div className="para-7 py-6 sm:py-10  leading-6 sm:leading-7">
+            </motion.div>
+            <motion.div
+              className="title-7"
+              variants={textVariants}
+              initial="initialone"
+              whileInView="animate"
+            >
+              Year: {achievement.year}
+            </motion.div>
+            <motion.div
+              className="para-7 py-6 sm:py-10  leading-6 sm:leading-7"
+              variants={textVariants}
+              initial="initialone"
+              whileInView="animate"
+            >
               {achievement.description}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </div>
