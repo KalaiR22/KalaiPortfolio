@@ -41,31 +41,26 @@ const Banner = () => {
   return (
     <div className="px-4 sm:px-10 md:px-10 xl:px-14 2xl:px-20 md:justify-between mx-auto flex flex-col-reverse items-center justify-center md:flex-row relative">
       <motion.div
-        className="py-4 md:py-12 lg:py-20 " 
+        className="py-4 md:py-12 lg:py-20 "
         variants={textVariants}
         initial="initial"
         whileInView="animate"
-
       >
         <div>
           <div className="text-linear-gradient hello">
             Hi!
-            <span className="inline-block">
-              <MovingComponent
-                onAnimationEnd={handleChainAnimation}
-                type={animationType}
-                duration="1000ms"
-                timing="linear"
-                fillMode="forwards"
-                iteration={100}
-              >
-                <img
-                  src={hi}
-                  alt="hi"
-                  className="ml-4 sm:ml-6 h-[2.7rem] w-[2.7rem] sm:h-[5rem] sm:w-[5rem] xl:h-[6rem] xl:w-[6rem]"
-                />
-              </MovingComponent>
-            </span>
+            <motion.span
+              className="inline-block"
+              initial={{ scale: 0 }}
+              animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+              transition={{ repeat: Infinity, duration: 2 }}
+            >
+              <img
+                src={hi}
+                alt="hi"
+                className="ml-4 sm:ml-6 h-[2.7rem] w-[2.7rem] sm:h-[5rem] sm:w-[5rem] xl:h-[6rem] xl:w-[6rem]"
+              />
+            </motion.span>
             <br />
             I’m Kalaivani
           </div>
@@ -99,27 +94,53 @@ const Banner = () => {
         </div>
       </motion.div>
 
-      <motion.div className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto"
-      variants={textVariants}
+      <motion.div
+        className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center  mx-auto"
+        variants={textVariants}
         initial="initial"
-        whileInView="animate">
-        <img src={main} alt="working" />
+        whileInView="animate"
+      >
+        <img
+          src={main}
+          alt="working"
+          animate={{ x: 100 }}
+          transition={{ delay: 4 }}
+        />
       </motion.div>
       <div>
-        <ScrollParallax isAbsolutelyPositioned>
-          <div className="absolute right-3/4 top-0 h-[2.5rem] w-[2.5rem] sm:h-[4rem] sm:w-[4rem] md:right-1/3 md:h-[1rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]">
-            <img src={cone} alt="cone" />
-          </div>
-          <div className="absolute top-[2rem] right-[1.5rem] h-[2.5rem] w-[2rem] sm:h-[4rem] sm:w-[4rem] md:top-[.9rem] md:right-[2.8rem] lg:top-[3rem] xl:top-[4rem] xl:right-[1rem] 2xl:top-[4rem] 2xl:right-[4rem] md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] 2xl:w-[8rem] 2xl:h-[8rem]">
-            <img src={chain} alt="chain" />
-          </div>
-          <div className="absolute top-[10rem] sm:top-[21rem] md:top-[26rem] right-0 w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[10rem]">
-            <img src={chaintwo} alt="chain" />
-          </div>
-          <div className="absolute w-[2rem] h-[2rem] right-[13rem] sm:w-[5rem] sm:h-5rem lg:w-[6rem] lg:h-[6rem] top-[28rem] sm:top-[53rem] md:top-[30rem] lg:top-[34rem] md:right-[28rem] xl:top-[38rem] xl:right-[35rem]">
-            <img src={chain} alt="chain" />
-          </div>
-        </ScrollParallax>
+        <motion.div
+          className="absolute right-3/4 top-0 h-[2.5rem] w-[2.5rem] sm:h-[4rem] sm:w-[4rem] md:right-1/3 md:h-[1rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[9rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={cone} alt="cone" />
+        </motion.div>
+
+        <motion.div
+          className="absolute top-[2rem] right-[1.5rem] h-[2.5rem] w-[2rem] sm:h-[4rem] sm:w-[4rem] md:top-[.9rem] md:right-[2.8rem] lg:top-[3rem] xl:top-[4rem] xl:right-[1rem] 2xl:top-[4rem] 2xl:right-[4rem] md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] 2xl:w-[8rem] 2xl:h-[8rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chain} alt="chain" />
+        </motion.div>
+        <motion.div
+          className="absolute top-[10rem] sm:top-[21rem] md:top-[26rem] right-0 w-[2rem] h-[2rem] sm:w-[4rem] sm:h-[4rem] md:w-[4rem] md:h-[4rem] lg:w-[6rem] lg:h-[6rem] xl:h-[7rem] xl:w-[7rem] 2xl:w-[9rem] 2xl:h-[10rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chaintwo} alt="chain" />
+        </motion.div>
+        <motion.div
+          className="absolute w-[2rem] h-[2rem] right-[13rem] sm:w-[5rem] sm:h-5rem lg:w-[6rem] lg:h-[6rem] top-[28rem] sm:top-[53rem] md:top-[30rem] lg:top-[34rem] md:right-[28rem] xl:top-[38rem] xl:right-[35rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chain} alt="chain" />
+        </motion.div>
       </div>
     </div>
   );
