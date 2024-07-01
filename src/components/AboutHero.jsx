@@ -112,20 +112,33 @@ const AboutHero = () => {
         </button>
       </motion.div>
       <div>
-        <ScrollParallax isAbsolutelyPositioned>
-          <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
-            <img src={startwo} alt="star" />
-          </div>
-          <div className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] md:h-[6rem] md:w-[6rem] lg:h-[7rem] lg:w-[7rem]  xl:w-fit xl:h-fit absolute top-[2rem] sm:top-[6rem] md:top-[8rem] lg:top-[10rem] xl:top-[15rem] left-0 ">
-            <img src={chainfour} alt="chain" />
-          </div>
-          <div className=" absolute h-[3.5rem] w-[3.5rem] sm:h-[6rem] sm:w-[6rem] md:h-[9rem] md:w-[9rem]  xl:w-fit xl:h-fit top-0 right-[1rem] sm:top-[2.5rem] sm:right-[2.5rem] md:top-[5rem] md:right-[4rem] lg:top-[6rem] lg:right-[8rem] xl:top-[7rem] xl:right-[10rem]">
-            <img src={chainfive} alt="chain" />
-          </div>
-          <div className=" absolute bottom-0 lg:bottom-[2.5rem] xl:bottom-[3rem] h-[2rem] w-[2rem] sm:h-[5rem] sm:w-[4rem] md:h-[4rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:w-fit xl:h-fit right-1/4">
-            <img src={conethree} alt="cone" />
-          </div>
-        </ScrollParallax>
+        <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
+          <img src={startwo} alt="star" />
+        </div>
+        <motion.div
+          className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] md:h-[6rem] md:w-[6rem] lg:h-[7rem] lg:w-[7rem]  xl:w-fit xl:h-fit absolute top-[2rem] sm:top-[6rem] md:top-[8rem] lg:top-[10rem] xl:top-[15rem] left-0 "
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chainfour} alt="chain" />
+        </motion.div>
+        <motion.div
+          className=" absolute h-[3.5rem] w-[3.5rem] sm:h-[6rem] sm:w-[6rem] md:h-[9rem] md:w-[9rem]  xl:w-fit xl:h-fit top-0 right-[1rem] sm:top-[2.5rem] sm:right-[2.5rem] md:top-[5rem] md:right-[4rem] lg:top-[6rem] lg:right-[8rem] xl:top-[7rem] xl:right-[10rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chainfive} alt="chain" />
+        </motion.div>
+        <motion.div
+          className=" absolute bottom-0 lg:bottom-[2.5rem] xl:bottom-[3rem] h-[2rem] w-[2rem] sm:h-[5rem] sm:w-[4rem] md:h-[4rem] md:w-[5rem] lg:h-[6rem] lg:w-[6rem] xl:w-fit xl:h-fit right-1/4"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={conethree} alt="cone" />
+        </motion.div>
       </div>
     </div>
   );

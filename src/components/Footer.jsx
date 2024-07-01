@@ -45,7 +45,7 @@ const Footer = () => {
           Let’s Discuss
         </h1>
       </motion.div>
-      <div
+      <motion.div
         className="flex flex-col lg:flex-row items-center justify-between sm:px-5 py-40"
         variants={textVariants}
         initial="initialone"
@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           ))}
         </motion.div>
-      </div>
+      </motion.div>
       <div className="para-5 pb-4 text-center">
         Developed by kalaivani @2024.All rights received
       </div>

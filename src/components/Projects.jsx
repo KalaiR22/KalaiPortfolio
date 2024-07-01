@@ -66,14 +66,17 @@ const Projects = () => {
         ))}
       </motion.div>
       <div>
-        <ScrollParallax isAbsolutelyPositioned>
-          <div className="absolute top-[4rem] right-0 h-[10rem] w-[8rem] sm:top-[1rem] lg:top-[5rem] sm:right-[1.5rem] lg:right-[2rem] xl:right-[4rem] z-0 sm:h-[70rem] sm:w-[15rem] lg:h-[70rem] lg:w-[20rem] xl:h-[95rem]  xl:w-[23rem]">
-            <img src={starone} alt="star" />
-          </div>
-          <div className="absolute top-[7rem] right-[1rem] h-[4.5rem] w-[3.5rem] sm:h-[7rem] sm:w-[5rem] sm:top-[7rem] sm:right-[3rem] lg:top-[7rem] xl:top-[5rem] lg:right-[3rem] xl:right-[5rem] lg:h-[7rem]  lg:w-[7rem] xl:h-[10rem]  xl:w-[10rem]">
-            <img src={chain} alt="star" />
-          </div>
-        </ScrollParallax>
+        <div className="absolute top-[4rem] right-0 h-[10rem] w-[8rem] sm:top-[1rem] lg:top-[5rem] sm:right-[1.5rem] lg:right-[2rem] xl:right-[4rem] z-0 sm:h-[70rem] sm:w-[15rem] lg:h-[70rem] lg:w-[20rem] xl:h-[95rem]  xl:w-[23rem]">
+          <img src={starone} alt="star" />
+        </div>
+        <motion.div
+          className="absolute top-[7rem] right-[1rem] h-[4.5rem] w-[3.5rem] sm:h-[7rem] sm:w-[5rem] sm:top-[7rem] sm:right-[3rem] lg:top-[7rem] xl:top-[5rem] lg:right-[3rem] xl:right-[5rem] lg:h-[7rem]  lg:w-[7rem] xl:h-[10rem]  xl:w-[10rem]"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={chain} alt="star" />
+        </motion.div>
       </div>
     </div>
   );

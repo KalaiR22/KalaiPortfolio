@@ -41,7 +41,7 @@ const Banner = () => {
   return (
     <div className="px-4 sm:px-10 md:px-10 xl:px-14 2xl:px-20 md:justify-between mx-auto flex flex-col-reverse items-center justify-center md:flex-row relative">
       <motion.div
-        className="py-4 md:py-12 lg:py-20 "
+        className="py-4 md:py-12 lg:py-20"
         variants={textVariants}
         initial="initial"
         whileInView="animate"
@@ -95,7 +95,7 @@ const Banner = () => {
       </motion.div>
 
       <motion.div
-        className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center  mx-auto"
+        className="mt-0 h-[13rem] w-[13rem] sm:h-[26rem] sm:w-[26rem] lg:h-[26rem] lg:w-[26rem] xl:h-[30rem] xl:w-[30rem] flex md:items-center mx-auto"
         variants={textVariants}
         initial="initial"
         whileInView="animate"

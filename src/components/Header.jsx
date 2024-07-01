@@ -1,16 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import { Link as ScrollLink } from "react-scroll";
-
-
 
 const Header = () => {
-  // State to manage the active link
-  const [activeLink, setActiveLink] = useState("home");
-
-  // State to manage the visibility of the menu
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
@@ -35,73 +29,36 @@ const Header = () => {
             <Link
               to="/"
               className={`menu hover:bg-slate-600 py-2 px-2 rounded-md ${
-                activeLink === "home" ? "text-active" : "text-1"
+                location.pathname === "/" ? "text-active" : ""
               }`}
-              onClick={() => {
-                setActiveLink("home");
-                setMenuOpen(false); // Close menu on link click
-              }}
             >
               Home
             </Link>
             <Link
               to="/about"
               className={`menu hover:bg-slate-600 py-2 px-2 rounded-md ${
-                activeLink === "about" ? "text-active" : "text-1"
+                location.pathname === "/about" ? "text-active" : ""
               }`}
-              onClick={() => {
-                setActiveLink("about");
-                setMenuOpen(false); // Close menu on link click
-              }}
             >
               About
             </Link>
-            <ScrollLink
-              to="projects-section"
-              smooth={true}
-              duration={500}
-              className={`menu hover:bg-slate-600 py-2 px-2 rounded-md cursor-pointer ${
-                activeLink === "projects" ? "text-active" : "text-1"
-              }`}
-              onClick={() => {
-                setActiveLink("projects");
-                setMenuOpen(false); // Close menu on link click
-              }}
-            >
-              Projects
-            </ScrollLink>
           </div>
         )}
         <div className="hidden sm:flex gap-8 md:gap-20">
           <Link
             to="/"
-            className={`menu ${
-              activeLink === "home" ? "text-active" : "text-1"
-            }`}
-            onClick={() => setActiveLink("home")}
+            className={`menu ${location.pathname === "/" ? "text-active" : ""}`}
           >
             Home
           </Link>
           <Link
             to="/about"
             className={`menu ${
-              activeLink === "about" ? "text-active" : "text-1"
+              location.pathname === "/about" ? "text-active" : ""
             }`}
-            onClick={() => setActiveLink("about")}
           >
             About
           </Link>
-          <ScrollLink
-            to="projects-section"
-            smooth={true}
-            duration={500}
-            className={`menu cursor-pointer ${
-              activeLink === "projects" ? "text-active" : "text-1"
-            }`}
-            onClick={() => setActiveLink("projects")}
-          >
-            Projects
-          </ScrollLink>
         </div>
       </div>
     </div>
