@@ -107,16 +107,19 @@ const AboutMe = () => {
           </div>
         </motion.div>
         <div className="mx-auto pt-6">
-          <button className="flex gap-2 button-left-right rounded-full p-3 sm:p-5">
+          <motion.button
+            className="flex gap-2 button-left-right rounded-full p-3 sm:p-5"
+            whileHover={{ scale: 1.2 }}
+          >
             Check it out{" "}
             <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
-          </button>
+          </motion.button>
         </div>
       </motion.div>
 
       <div>
         <motion.div
-          className="absolute top-[2rem] left-5 h-[6rem] w-[6rem] sm:h-[10rem] sm:w-[10rem] md:h-[12rem] md:w-[12rem] xl:h-[15rem] xl:w-[15rem]"
+          className="absolute top-[1.5rem] left-2 h-[6rem] w-[6rem] sm:h-[10rem] sm:w-[10rem] md:h-[12rem] md:w-[12rem] xl:h-[15rem] xl:w-[15rem]"
           initial={{ scale: 0 }}
           animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
           transition={{ repeat: Infinity, duration: 2 }}

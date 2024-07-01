@@ -66,9 +66,9 @@ const Footer = () => {
           whileInView="animate"
         >
           {footerlogo.map((footer) => (
-            <div key={footer.id}>
+            <motion.div key={footer.id} whileHover={{ scale: 1.2 }}>
               <img src={footer.image} alt="logo" />
-            </div>
+            </motion.div>
           ))}
         </motion.div>
       </motion.div>

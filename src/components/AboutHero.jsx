@@ -107,9 +107,12 @@ const AboutHero = () => {
         initial="initialone"
         whileInView="animate"
       >
-        <button className="flex gap-2 button-left-right rounded-full p-3 sm:p-5">
+        <motion.button
+          className="flex gap-2 button-left-right rounded-full p-3 sm:p-5"
+          whileHover={{ scale: 1.2 }}
+        >
           Hire Me <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
-        </button>
+        </motion.button>
       </motion.div>
       <div>
         <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
