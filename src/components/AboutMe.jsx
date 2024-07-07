@@ -6,7 +6,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import circle from '../assets/circles.png';
 import conetwo from '../assets/conetwo.png';
 import chainthree from '../assets/chainthree.png';
-
+import starsthree from '../assets/starsthree.png';
 
 const textVariants = {
   initialone: {
@@ -142,6 +142,9 @@ const AboutMe = () => {
         >
           <img src={chainthree} alt="chain" />
         </motion.div>
+        <div className='absolute top-[45rem] sm:top-[60rem] lg:top-96 left-0 h-[15rem] w-[10rem] sm:h-[18rem] sm:w-[13rem] lg:h-fit lg:w-fit'>
+          <img src={starsthree} alt="star" />
+        </div>
       </div>
     </div>
   );

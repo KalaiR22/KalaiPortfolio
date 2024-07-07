@@ -19,7 +19,13 @@ import discord from '../assets/discord.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
 import telegram from '../assets/telegram.png';
-import achievment from '../assets/achievement.png';
+import academic from '../assets/Academic.jpg';
+import adventest from '../assets/Adventest.jpg';
+import kla1 from '../assets/KLA1.jpg';
+import kla2 from '../assets/KLA2.jpg';
+import she1 from '../assets/SHE1.jpg';
+import she2 from '../assets/SHE2.jpg';
+import webcreation from '../assets/webcreation.jpg';
 export const tools =[
     {
     id: "0",
@@ -97,39 +103,52 @@ export const footerlogo=[
            {
     id: "0",
     image: github,
+    link: "https://github.com/KalaiR22",
   },
   {
     id: "1",
     image: discord,
+    link:'',
   },
   {
     id: "2",
     image: linkedin,
+    link:'https://www.linkedin.com/in/kalaivani-r-202a85249/',
   },
   {
     id: "3",
     image: telegram,
+    link:'',
   },
 ]
 
 export const workexperience=[
   {
     id:'0',
-    company:'Delta Info Tech',
+    company:'DetaInfo Tech',
     role:'Mern Stack',
     part:'Frontend - Backend',
-    industry:'Job offer site',
+    industry:'Online',
     location:'Chennai',
-    year:'2024',
+    year:'Present',
   },
   {
     id:'1',
-    company:'Yugaas Tech',
-    role:'Mern Stack',
-    part:'Frontend - Backend',
-    industry:'Job offer site',
+    company:'Zeit Tech',
+    role:'Web Developer',
+    part:'Frontend ',
+    industry:'Online',
     location:'Chennai',
-    year:'2024',
+    year:'2023',
+  },
+  {
+    id:'2',
+    company:'Yugaas Tech',
+    role:'Web Developer',
+    part:'Frontend ',
+    industry:'Online',
+    location:'Chennai',
+    year:'2023',
   }
 ]
 
@@ -137,29 +156,32 @@ export const workexperience=[
 export const achievmentimage =[
         {
     id: "0",
-    image: achievment,
+    image: kla1,
   },
   {
     id: "1",
-    image: achievment,
+    image: she1,
   },
   {
     id: "2",
-    image: achievment,
+    image: kla2,
   },
   {
     id: "3",
-    image: achievment,
+    image: she2,
   },
   {
     id: "4",
-    image: achievment,
+    image: adventest,
   },
   {
     id: "5",
-    image: achievment,
+    image: academic,
   },
- 
+ {
+    id: "6",
+    image: webcreation,
+  },
 ]
 
 
@@ -168,18 +190,30 @@ export const achievements = [
     id:'0',
     title:"Hackathon Winner",
     year:"2023",
-    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+    description:"3rd Prize in KLA Hackathon  - Developed Void Voices, a platform for learning Braille focused on tech for education and inclusivity",
   },
   {
     id:'1',
     title:"Hackathon Winner",
     year:"2023",
-    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+    description:"1st Prize in Star Hack Era Hackathon - Developed ClutchView, a platform for amputees, under the Tech for Good initiative.",
   },
   {
     id:'2',
-    title:"Hackathon Winner",
+    title:"Tech Demo Winner",
     year:"2023",
-    description:"We are a dedicated team of MERN stack developers passionate about creating dynamic and responsive web applications. With expertise in MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack solutions tailored to your needs. Our commitment to innovation and excellence ensures that we stay ahead of the curve in web development trends.",
+    description:"1st Position for Demo in Adventest - Demonstrated a prediction tool called Orange using real-time data for accurate analytics",
+  },
+   {
+    id:'3',
+    title:"Academic Performance",
+    year:"2023",
+    description:"Achieved 1st prize in academic performance with a CGPA of 9.03, demonstrating my dedication to excellence in my studies. This accomplishment reflects my strong work ethic and commitment to academic success.",
+  },
+   {
+    id:'3',
+    title:"Website Creation",
+    year:"2022",
+    description:"1st Position in website creation - Created a website using HTML, CSS, and JavaScript to showcase open-source tools for developers and non-developers for Open Source Day.",
   },
 ]

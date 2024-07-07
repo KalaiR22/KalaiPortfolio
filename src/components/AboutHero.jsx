@@ -6,7 +6,7 @@ import chainfour from '../assets/chainfour.png';
 import chainfive from '../assets/chainfive.png';
 import startwo from '../assets/startwo.png'
 import conethree from '../assets/conethree.png'
-
+import starstwo from '../assets/starstwo.png'
 const textVariants = {
   initialone: {
     x: -100,
@@ -53,12 +53,11 @@ const AboutHero = () => {
         initial="initialone"
         whileInView="animate"
       >
-        We are a dedicated team of MERN stack developers passionate about
-        creating dynamic and responsive web applications. With expertise in
-        MongoDB, Express.js, React, and Node.js, we deliver seamless, full-stack
-        solutions tailored to your needs. Our commitment to innovation and
-        excellence ensures that we stay ahead of the curve in web development
-        trends.
+        I am a dedicated MERN stack developer passionate about creating dynamic
+        and responsive web applications. With expertise in MongoDB, Express.js,
+        React, and Node.js, I deliver seamless, full-stack solutions tailored to
+        your needs. My commitment to innovation and excellence ensures that I
+        stay ahead of the curve in web development trends.
       </motion.div>
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-16 md:gap-32 lg:gap-44 sm:leading-[5rem] pt-[2rem] sm:pt-[4rem]">
         <motion.div
@@ -81,7 +80,7 @@ const AboutHero = () => {
           whileInView="animate"
         >
           <div className="text-center">
-            <div className="text-radial-gradient title text-center">10+</div>
+            <div className="text-radial-gradient title text-center">4+</div>
           </div>
           <div className="para-2-sub sm:w-[102px] text-center leading-6">
             Successfull projects
@@ -94,7 +93,7 @@ const AboutHero = () => {
           whileInView="animate"
         >
           <div className="text-center">
-            <div className="text-radial-gradient title text-center">4+</div>
+            <div className="text-radial-gradient title text-center">2+</div>
           </div>
           <div className="para-2-sub sm:w-[102px] text-center leading-6">
             Intern completion
@@ -115,9 +114,14 @@ const AboutHero = () => {
         </motion.button>
       </motion.div>
       <div>
-        <div className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 ">
+        <motion.div
+          className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 "
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
           <img src={startwo} alt="star" />
-        </div>
+        </motion.div>
         <motion.div
           className="h-[3rem] w-[3rem] sm:h-[5rem] sm:w-[5rem] md:h-[6rem] md:w-[6rem] lg:h-[7rem] lg:w-[7rem]  xl:w-fit xl:h-fit absolute top-[2rem] sm:top-[6rem] md:top-[8rem] lg:top-[10rem] xl:top-[15rem] left-0 "
           initial={{ scale: 0 }}
@@ -141,6 +145,14 @@ const AboutHero = () => {
           transition={{ repeat: Infinity, duration: 2 }}
         >
           <img src={conethree} alt="cone" />
+        </motion.div>
+        <motion.div
+          className=" absolute right-0 top-0"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
+          <img src={starstwo} alt="star" />
         </motion.div>
       </div>
     </div>

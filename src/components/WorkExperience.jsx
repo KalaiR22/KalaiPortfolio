@@ -66,7 +66,7 @@ const WorkExperience = () => {
             </div>
             <div className="flex flex-col sm:w-[350px] md:w-[330px] lg:w-[460px] xl:w-[565px] gap-4 sm:gap-8 lg:gap-10">
               <div className="flex bottom-border pb-2 xl:pb-3 justify-between items-end">
-                <div className="titlesix">Industry</div>
+                <div className="titlesix">Mode</div>
                 <div className="para-6 pr-4">{work.industry}</div>
               </div>
               <div className="flex bottom-border sm:pb-2 xl:pb-3 justify-between items-end">
