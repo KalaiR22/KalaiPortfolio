@@ -68,12 +68,12 @@ const AboutMe = () => {
           initial="initialone"
           whileInView="animate"
         >
-          We are a dedicated team of MERN stack developers passionate about
-          creating dynamic and responsive web applications. With expertise in
-          MongoDB, Express.js, React, and Node.js, we deliver seamless,
-          full-stack solutions tailored to your needs. Our commitment to
-          innovation and excellence ensures that we stay ahead of the curve in
-          web development trends.
+          I am a dedicated MERN stack developer passionate about creating
+          dynamic and responsive web applications. With expertise in MongoDB,
+          Express.js, React, and Node.js, I deliver seamless, full-stack
+          solutions tailored to your needs. My commitment to innovation and
+          excellence ensures that I stay ahead of the curve in web development
+          trends.
         </motion.div>
         <motion.div
           className="flex flex-col sm:flex-row sm:px-5 md:px-16 lg:px-0 gap-4 sm:justify-between"
@@ -91,7 +91,7 @@ const AboutMe = () => {
           </div>
           <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
-              <div className="text-radial-gradient title text-center">10+</div>
+              <div className="text-radial-gradient title text-center">4+</div>
             </div>
             <div className="para-2-sub sm:w-[102px] text-center sm:leading-6">
               Successfull projects
@@ -99,7 +99,7 @@ const AboutMe = () => {
           </div>
           <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
-              <div className="text-radial-gradient title text-center">4+</div>
+              <div className="text-radial-gradient title text-center">2+</div>
             </div>
             <div className="para-2-sub sm:w-[102px] text-center leading-6">
               Intern completion

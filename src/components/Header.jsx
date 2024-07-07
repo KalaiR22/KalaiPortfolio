@@ -42,6 +42,14 @@ const Header = () => {
             >
               About
             </Link>
+            <Link
+              to="/projects"
+              className={`menu hover:bg-slate-600 py-2 px-2 rounded-md ${
+                location.pathname === "/projects" ? "text-active" : ""
+              }`}
+            >
+              Projects
+            </Link>
           </div>
         )}
         <div className="hidden sm:flex gap-8 md:gap-20">
@@ -58,6 +66,14 @@ const Header = () => {
             }`}
           >
             About
+          </Link>
+          <Link
+            to="/projects"
+            className={`menu ${
+              location.pathname === "/projects" ? "text-active" : ""
+            }`}
+          >
+            Projects
           </Link>
         </div>
       </div>

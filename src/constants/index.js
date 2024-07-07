@@ -28,77 +28,37 @@ export const tools =[
   },
   {
     id: "1",
-    title: "Typescript",
-    image: ts,
-  },
-  {
-    id: "2",
     title: "React",
     image: react,
   },
   {
-    id: "3",
-    title: "Next.js",
-    image: nextjs,
-  },
-  {
-    id: "4",
+    id: "2",
     title: "Node.js",
     image: nodejs,
   },
   {
-    id: "5",
+    id: "3",
     title: "Express.js",
     image: express,
   },
   {
-    id: "6",
-    title: "Nest.js",
-    image: nest,
-  },
-  {
-    id: "7",
-    title: "Socket.io",
-    image: socket,
-  },
-  {
-    id: "8",
-    title: "PostgreSQL",
-    image: postgresql,
-  },
-  {
-    id: "9",
+    id: "4",
     title: "MongoDB",
     image: mongodb,
   },
-  {
-    id: "10",
-    title: "Sass/Scss",
-    image: sass,
-  },
-  {
-    id: "11",
+    {
+    id: "5",
     title: "Tailwindcss",
     image: tailwindcss,
   },
 
   {
-    id: "12",
+    id: "6",
     title: "Figma",
     image: figma,
   },
   {
-    id: "13",
-    title: "Cypress",
-    image: cypress,
-  },
-  {
-    id: "14",
-    title: "Storybook",
-    image: storybook,
-  },
-  {
-    id: "15",
+    id: "7",
     title: "Git",
     image: git,
   },

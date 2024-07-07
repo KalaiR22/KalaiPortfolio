@@ -41,7 +41,7 @@ const Banner = () => {
   return (
     <div className="px-4 sm:px-10 md:px-10 xl:px-14 2xl:px-20 md:justify-between mx-auto flex flex-col-reverse items-center justify-center md:flex-row relative">
       <motion.div
-        className="py-4 md:py-12 lg:py-20"
+        className="py-4 md:py-12 lg:py-14"
         variants={textVariants}
         initial="initial"
         whileInView="animate"
