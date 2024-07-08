@@ -59,7 +59,7 @@ const Crisscross = () => {
           {textItems.map((text, index) => (
             <div
               key={index + textItems.length}
-              className="ribbon-text-wrapper  "
+              className="ribbon-text-wrapper"
             >
               <img
                 src={ministar}

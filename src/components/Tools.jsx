@@ -62,7 +62,7 @@ const Tools = () => {
               src={tool.image}
               alt="tool"
               className="h-[3rem] w-[3rem] sm:h-fit sm:w-fit"
-              
+              whileHover={{ scale: 1.2 }}
             />
             <div className="para-3">{tool.title}</div>
           </motion.div>
