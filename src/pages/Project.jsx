@@ -1,10 +1,11 @@
-import React, { useRef } from "react";
+import React, { useRef,useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { projects } from "../constants";
 import starone from "../assets/starone.png";
 import chain from "../assets/chain.png";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaLink } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 import '../../src/App.css'
 
 const textVariants = {
@@ -27,9 +28,36 @@ const textVariants = {
 };
 
 const Projects = () => {
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowArrow(true);
+      } else {
+        setShowArrow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   const parallaxRef = useRef(null);
   return (
-    <div className="relative px-4 sm:px-14 lg:px-10 xl:px-14 2xl:px-20 flex flex-col">
+    <div className="relative px-4 mt-24 sm:px-14 lg:px-10 xl:px-14 2xl:px-20 flex flex-col">
       <motion.div
         className="mx-auto"
         variants={textVariants}
@@ -102,6 +130,14 @@ const Projects = () => {
           <img src={chain} alt="star" />
         </motion.div>
       </div>
+      {showArrow && (
+        <button
+          className="fixed bottom-4 right-4 bg-gradient-to-b from-gradientstart to-gradientend text-white p-2 rounded-full shadow-lg z-50"
+          onClick={scrollToTop}
+        >
+          <FaArrowUp />
+        </button>
+      )}
     </div>
   );
 };
