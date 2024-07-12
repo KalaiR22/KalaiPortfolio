@@ -57,12 +57,12 @@ const Tools = () => {
             variants={textVariants}
             initial="initialtwo"
             whileInView="animate"
+            whileHover={{ scale: 1.2 }}
           >
             <motion.img
               src={tool.image}
               alt="tool"
               className="h-[3rem] w-[3rem] sm:h-fit sm:w-fit"
-              whileHover={{ scale: 1.2 }}
             />
             <div className="para-3">{tool.title}</div>
           </motion.div>

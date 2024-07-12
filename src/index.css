@@ -32,7 +32,7 @@ body {
 }
 
 .button-top-bottom{
-    @apply bg-gradient-to-b from-gradientstart to-gradientend text-white p-3 rounded-full
+    @apply bg-gradient-to-b from-gradientstart to-gradientend text-white  px-4 py-2 sm:px-6 sm:py-3 rounded-full
 }
 
 .button-left-right{
@@ -221,4 +221,35 @@ body {
 
 .ribbon-text {
     margin: 0 1rem;
+}
+
+.element {
+    border: 2px solid;
+    border-image-slice: 1;
+    
+    border-image-source: linear-gradient(to right,#E9EFEF 4%,
+        #E680E8 29%,
+        #A3C4F1 49%,
+        #E480EB 70%);
+}
+
+
+.create-job-input {
+    @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6
+}
+
+
+/* styles.css */
+.hover\\:skew-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover\\:skew-effect:hover {
+    transform: skewX(5deg) skewY(5deg);
+}
+
+.custom-modal-bg .modal-content {
+    background-color: black !important;
+    color: white;
+    /* Optional: Change text color to white for better contrast */
 }

@@ -26,6 +26,10 @@ import kla2 from '../assets/KLA2.jpg';
 import she1 from '../assets/SHE1.jpg';
 import she2 from '../assets/SHE2.jpg';
 import webcreation from '../assets/webcreation.jpg';
+import clutchview from '../assets/clutchview.png'
+import brain from '../assets/brain.png';
+import jp from '../assets/jp.png';
+
 export const tools =[
     {
     id: "0",
@@ -74,29 +78,26 @@ export const tools =[
 export const projects =[
         {
     id: "0",
-    image: frame,
+    image: brain,
+    link:'https://brain-wave-sepia.vercel.app/',
+    github:"https://github.com/KalaiR22/BrainWave",
+    title:"Brain wave",
   },
   {
     id: "1",
-    image: frame,
+    image: jp,
+    link:'https://job-portal-alpha-two.vercel.app/',
+    github:"https://github.com/KalaiR22/Job-Portal",
+    title:"Job Portal",
   },
   {
     id: "2",
-    image: frame,
+    image: clutchview,
+    link:'https://clutch-view.vercel.app/',
+    github:"https://github.com/KalaiR22/Clutch-View",
+    title:"Clutch view",
   },
-  {
-    id: "3",
-    image: frame,
-  },
-  {
-    id: "4",
-    image: frame,
-  },
-  {
-    id: "5",
-    image: frame,
-  },
- 
+  
 ]
 
 export const footerlogo=[

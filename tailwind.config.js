@@ -38,11 +38,12 @@ export default {
         7:"#E9EFEF",
         8:'#0D1116',
         9:'#000000',
+        br:"#E4E7EC",
         gradientstart: '#A3C4F1',
         gradientend: '#E680E8',
         active:"#E480EB",
-      
-      },
+        bg:'radial-gradient(circle, #E680E8 0%, #A3C4F1 15%, #A3C4F1 39%, #E480EB 80%)',
+         },
 
     },
   },

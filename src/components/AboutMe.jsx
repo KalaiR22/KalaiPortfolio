@@ -83,7 +83,7 @@ const AboutMe = () => {
         >
           <div className="flex flex-col gap-2 sm:gap-5">
             <div className="text-center">
-              <div className="text-radial-gradient title text-center">2+</div>
+              <div className="text-radial-gradient title text-center">1+</div>
             </div>
             <div className="para-2-sub sm:w-[102px] text-center sm:sm:leading-6">
               Years of experience
@@ -107,13 +107,15 @@ const AboutMe = () => {
           </div>
         </motion.div>
         <div className="mx-auto pt-6">
-          <motion.button
-            className="flex gap-2 button-left-right rounded-full p-3 sm:p-5"
-            whileHover={{ scale: 1.2 }}
-          >
-            Check it out{" "}
-            <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
-          </motion.button>
+          <a href="https://docs.google.com/document/d/1dp4i2yBUjDOIAvToDbXmmzmyHBrgjNZm/edit?usp=sharing&ouid=113642216918220164712&rtpof=true&sd=true">
+            <motion.button
+              className="flex gap-2 button-left-right rounded-full p-3 sm:p-5"
+              whileHover={{ scale: 1.2 }}
+            >
+              Check it out{" "}
+              <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
+            </motion.button>
+          </a>
         </div>
       </motion.div>
 
@@ -142,9 +144,14 @@ const AboutMe = () => {
         >
           <img src={chainthree} alt="chain" />
         </motion.div>
-        <div className='absolute top-[45rem] sm:top-[60rem] lg:top-96 left-0 h-[15rem] w-[10rem] sm:h-[18rem] sm:w-[13rem] lg:h-fit lg:w-fit'>
+        <motion.div
+          className="absolute top-[45rem] sm:top-[60rem] lg:top-96 left-0 h-[15rem] w-[10rem] sm:h-[18rem] sm:w-[13rem] lg:h-fit lg:w-fit"
+          initial={{ scale: 0 }}
+          animate={{ scale: [1], y: [1, -1, 3, -2, 4] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
           <img src={starsthree} alt="star" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

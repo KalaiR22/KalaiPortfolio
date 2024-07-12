@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { footerlogo } from '../constants';
+import Message from './Message';
 
 
 const textVariants = {
@@ -24,7 +25,7 @@ const textVariants = {
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-4 sm:px-10 xl:px-14 2xl:px-28">
+    <div className="flex flex-col px-4 sm:px-3 xl:px-14 2xl:px-28">
       <motion.div
         className="mx-auto"
         variants={textVariants}
@@ -45,6 +46,9 @@ const Footer = () => {
           Let’s Discuss
         </h1>
       </motion.div>
+      <div>
+        <Message />
+      </div>
       <motion.div
         className="flex flex-col lg:flex-row items-center justify-between sm:px-5 py-40"
         variants={textVariants}
@@ -67,7 +71,9 @@ const Footer = () => {
         >
           {footerlogo.map((footer) => (
             <motion.div key={footer.id} whileHover={{ scale: 1.2 }}>
-              <img src={footer.image} alt="logo" />
+              <a href={footer.link}>
+                <img src={footer.image} alt="logo" />
+              </a>
             </motion.div>
           ))}
         </motion.div>

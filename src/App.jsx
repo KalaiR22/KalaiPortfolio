@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Project from "./pages/Project";
 
 
+
 function App() {
   return (
     <Router>

@@ -1,12 +1,17 @@
-import React,{useRef} from 'react';
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { ScrollParallax } from "react-just-parallax";
 import { GoArrowUpRight } from "react-icons/go";
-import chainfour from '../assets/chainfour.png';
-import chainfive from '../assets/chainfive.png';
-import startwo from '../assets/startwo.png'
-import conethree from '../assets/conethree.png'
-import starstwo from '../assets/starstwo.png'
+import chainfour from "../assets/chainfour.png";
+import chainfive from "../assets/chainfive.png";
+import startwo from "../assets/startwo.png";
+import conethree from "../assets/conethree.png";
+import starstwo from "../assets/starstwo.png";
+import Message from "./Message";
+import { Modal, Button } from "flowbite-react";
+import "../../src/index.css"; // Ensure you import the CSS file
+import MessageWhite from "./MessageWhite";
+import { IoClose } from "react-icons/io5";
+
 const textVariants = {
   initialone: {
     x: -100,
@@ -26,8 +31,9 @@ const textVariants = {
   },
 };
 
-
 const AboutHero = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   const parallaxRef = useRef(null);
   return (
     <div className="relative flex flex-col items-center leading-[3rem] sm:leading-[5rem] md:leading-[7rem] sm:py-10 md:py-14 lg:py-24 px-4  sm:px-10 md:px-10 xl:px-14 2xl:px-20">
@@ -67,7 +73,7 @@ const AboutHero = () => {
           whileInView="animate"
         >
           <div className="text-center">
-            <div className="text-radial-gradient title text-center">2+</div>
+            <div className="text-radial-gradient title text-center">1+</div>
           </div>
           <div className="para-2-sub sm:w-[102px] text-center  leading-6">
             Years of experience
@@ -109,10 +115,25 @@ const AboutHero = () => {
         <motion.button
           className="flex gap-2 button-left-right rounded-full p-3 sm:p-5"
           whileHover={{ scale: 1.2 }}
+          onClick={() => setOpenModal(true)}
         >
           Hire Me <GoArrowUpRight className="text-[21px] sm:text-[31px]" />
         </motion.button>
       </motion.div>
+      <Modal
+        show={openModal}
+        onClose={() => setOpenModal(false)}
+        className="py-0"
+      >
+        {" "}
+        <div className=" relative flex flex-col bg-black py-7">
+          <button className=" absolute top-4 right-4  rounded-full bg-black  h-8 w-8 text-[2rem] bg-gradient-to-b from-gradientstart to-gradientend  text-white text-center "
+          onClick={()=> setOpenModal(false)}>
+            <IoClose />
+          </button>
+          <MessageWhite />
+        </div>
+      </Modal>
       <div>
         <motion.div
           className=" absolute h-[10rem] w-[7rem] sm:h-[30rem] sm:w-[18rem] md:h-[30rem] md:w-[20rem] lg:h-[35rem] lg:w-[25rem]  xl:w-fit xl:h-fit -top-10 sm:-top-24 left-5 "
@@ -157,6 +178,6 @@ const AboutHero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default AboutHero
+export default AboutHero;

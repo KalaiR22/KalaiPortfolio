@@ -48,7 +48,7 @@ export default function Home() {
       </div>
       {showArrow && (
         <button
-          className="fixed bottom-4 right-4 bg-gradient-to-b from-gradientstart to-gradientend text-white p-2 rounded-full shadow-lg "
+          className="fixed bottom-4 right-4 bg-gradient-to-b from-gradientstart to-gradientend text-white p-2 rounded-full shadow-lg z-50"
           onClick={scrollToTop}
           
         >
