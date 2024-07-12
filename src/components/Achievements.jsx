@@ -49,7 +49,7 @@ const Achievements = () => {
         Celebrating key successes and professional highlights and showcasing
         impactful results and accolades.
       </motion.div>
-      <div>
+      <div className="pt-12">
         <Swiper
           spaceBetween={30}
           autoplay={{
