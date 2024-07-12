@@ -49,9 +49,10 @@ const Achievements = () => {
         Celebrating key successes and professional highlights and showcasing
         impactful results and accolades.
       </motion.div>
-      <div className="pt-12">
+      <div className="pt-12 flex justify-center items-center">
+        
         <Swiper
-          spaceBetween={30}
+          spaceBetween={40}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -63,27 +64,30 @@ const Achievements = () => {
           }}
           breakpoints={{
             320: {
-              slidesPerView: 1,
-            },
-            640: {
               slidesPerView: 2,
             },
-            1024: {
+            640: {
               slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
             },
           }}
           modules={[Autoplay, Pagination]}
-          className="mySwiper py-10 lg:py-32"
+          className="mySwiper flex justify-center items-center py-10 lg:py-32 "
         >
           {achievmentimage.map((images) => (
-            <SwiperSlide key={images.id}>
+            <SwiperSlide
+              key={images.id}
+              className="flex items-center"
+            >
               <img src={images.image} alt="pic" />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      <div className=" sm:px-4 md:px-28 flex flex-col gap-6 py-10">
+      <div className=" sm:px-4 md:px-28 flex flex-col gap-6 py-10 xl:py-20">
         {achievements.map((achievement) => (
           <motion.div
             key={achievement.id}
