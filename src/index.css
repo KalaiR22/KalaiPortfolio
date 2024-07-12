@@ -186,7 +186,7 @@ body {
 }
 
 .spin-animation {
-    animation: spin 5s linear ;
+    animation: spin 10s linear ;
 }
 
 @keyframes scroll {
@@ -207,7 +207,7 @@ body {
 .scrolling-content {
     display: flex;
     width: 200%;
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .ribbon-text-wrapper {
